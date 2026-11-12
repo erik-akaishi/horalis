@@ -1,0 +1,24 @@
+# Horalis
+
+> Software de ponto, férias e benefícios conectados para o departamento pessoal (DP) de empresas de 50 a 300 pessoas. Resolve cada pendência no dia em que ela acontece para que o fechamento da folha do mês leve horas, não dias.
+
+A Horalis é feita para o DP enxuto, de 1 a 3 pessoas, que fecha a folha sozinho e hoje passa os últimos dias do mês caçando batidas faltando, atestados soltos e benefícios pagos indevidamente. Fica entre a planilha, que não aguenta 50 pessoas, e o ERP de RH, feito para empresas de 500 ou mais. Os números do site são estimativas sobre uma empresa-base (150 funcionários, DP de 2 pessoas, 40 horas de fechamento por mês, custo-hora de R$ 45, R$ 900 por mês em benefícios indevidos), não resultados medidos.
+
+## Produto
+- [Página inicial](https://erik-akaishi.github.io/horalis/): proposta, problema, transformação, mecanismo, calculadora, planos e perguntas
+- [O problema](https://erik-akaishi.github.io/horalis/#problema): o dia 30 de quem fecha a folha e os três sintomas
+- [Resultados](https://erik-akaishi.github.io/horalis/#resultados): 20 horas a menos por mês, 60% menos retificações, 2,5 vezes mais funcionários por pessoa do DP, R$ 900 por mês em benefícios evitados, folha enviada com 3 dias de antecedência
+- [Do tamanho certo](https://erik-akaishi.github.io/horalis/#tamanho-certo): comparativo entre planilha, Horalis e ERP de RH
+- [Como funciona](https://erik-akaishi.github.io/horalis/#como-funciona): pendências no dia, um lançamento com todos os reflexos, fechamento conferido
+- [Calculadora](https://erik-akaishi.github.io/horalis/#calculadora): economia mensal e anual com os números do DP
+- [Planos e preços](https://erik-akaishi.github.io/horalis/#precos): Essencial (50 a 100 funcionários, R$ 890/mês), Gestão (101 a 200, R$ 1.590/mês), Escala (201 a 300, R$ 2.290/mês)
+
+## Empresa
+- [Diagnóstico do fechamento](https://erik-akaishi.github.io/horalis/#diagnostico): conversa de 20 minutos sobre o fechamento atual da empresa
+- [Perguntas frequentes](https://erik-akaishi.github.io/horalis/#perguntas): troca de sistema, implantação, suporte e formato da folha
+
+## Segmentos atendidos
+Empresas de 50 a 300 funcionários de qualquer setor, com departamento pessoal enxuto.
+
+## Diferenciais
+Preço por faixa de funcionários, sem módulos; plantão de suporte do dia 28 ao dia 5; implantação em 3 semanas, valendo no próximo fechamento; férias e atestados ajustam ponto, banco de horas e benefícios num único lançamento.

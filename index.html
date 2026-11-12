@@ -1,0 +1,951 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Horalis · Feche a folha do mês em horas, não em dias</title>
+<meta name="description" content="Ponto, férias e benefícios conectados para o DP de empresas de 50 a 300 pessoas. Pendências resolvidas durante o mês e fechamento da folha conferido, sem retrabalho.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<link rel="canonical" href="https://erik-akaishi.github.io/horalis/">
+<meta name="theme-color" content="#F3EFE6">
+<meta name="color-scheme" content="light dark">
+<meta name="author" content="Horalis">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/instrument-sans-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/instrument-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/ibm-plex-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Horalis">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Horalis · Feche a folha do mês em horas, não em dias">
+<meta property="og:description" content="Ponto, férias e benefícios conectados para o DP de empresas de 50 a 300 pessoas. Pendências resolvidas durante o mês e fechamento da folha conferido, sem retrabalho.">
+<meta property="og:url" content="https://erik-akaishi.github.io/horalis/">
+<meta property="og:image" content="https://erik-akaishi.github.io/horalis/assets/og-horalis.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Horalis: feche a folha do mês em horas, não em dias. Fechamento de outubro: 3 dias hoje, 4 horas com a Horalis.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Horalis · Feche a folha do mês em horas, não em dias">
+<meta name="twitter:description" content="Ponto, férias e benefícios conectados para o DP de empresas de 50 a 300 pessoas. Pendências resolvidas durante o mês e fechamento da folha conferido, sem retrabalho.">
+<meta name="twitter:image" content="https://erik-akaishi.github.io/horalis/assets/og-horalis.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://erik-akaishi.github.io/horalis/#org","name":"Horalis","url":"https://erik-akaishi.github.io/horalis/","logo":"https://erik-akaishi.github.io/horalis/assets/logo-horalis.png","description":"Software de ponto, férias e benefícios para o departamento pessoal de empresas de 50 a 300 pessoas."},{"@type":"WebSite","@id":"https://erik-akaishi.github.io/horalis/#site","url":"https://erik-akaishi.github.io/horalis/","name":"Horalis","inLanguage":"pt-BR","publisher":{"@id":"https://erik-akaishi.github.io/horalis/#org"}},{"@type":"WebPage","@id":"https://erik-akaishi.github.io/horalis/#page","url":"https://erik-akaishi.github.io/horalis/","name":"Horalis · Feche a folha do mês em horas, não em dias","description":"Ponto, férias e benefícios conectados para o DP de empresas de 50 a 300 pessoas. Pendências resolvidas durante o mês e fechamento da folha conferido, sem retrabalho.","inLanguage":"pt-BR","isPartOf":{"@id":"https://erik-akaishi.github.io/horalis/#site"},"about":{"@id":"https://erik-akaishi.github.io/horalis/#app"},"primaryImageOfPage":"https://erik-akaishi.github.io/horalis/assets/og-horalis.png"},{"@type":"SoftwareApplication","@id":"https://erik-akaishi.github.io/horalis/#app","name":"Horalis","url":"https://erik-akaishi.github.io/horalis/","applicationCategory":"BusinessApplication","applicationSubCategory":"Gestão de ponto, férias e benefícios","operatingSystem":"Web","inLanguage":"pt-BR","description":"Ponto, férias e benefícios conectados para fechar a folha do mês em horas, não em dias. Feito para o DP de empresas de 50 a 300 pessoas.","audience":{"@type":"BusinessAudience","name":"Departamento pessoal de empresas de 50 a 300 funcionários"},"featureList":["Pendências de ponto resolvidas no dia em que acontecem","Férias e atestados ajustam ponto, banco de horas e benefícios de uma vez","Fechamento conferido e envio da folha à contabilidade","Plantão de suporte do dia 28 ao dia 5","Preço por faixa de funcionários, sem módulos"],"offers":[{"@type":"Offer","name":"Essencial (50 a 100 funcionários)","price":"890","priceCurrency":"BRL","url":"https://erik-akaishi.github.io/horalis/#precos"},{"@type":"Offer","name":"Gestão (101 a 200 funcionários)","price":"1590","priceCurrency":"BRL","url":"https://erik-akaishi.github.io/horalis/#precos"},{"@type":"Offer","name":"Escala (201 a 300 funcionários)","price":"2290","priceCurrency":"BRL","url":"https://erik-akaishi.github.io/horalis/#precos"}],"publisher":{"@id":"https://erik-akaishi.github.io/horalis/#org"}},{"@type":"FAQPage","@id":"https://erik-akaishi.github.io/horalis/#faq","mainEntity":[{"@type":"Question","name":"É só um sistema de ponto?","acceptedAnswer":{"@type":"Answer","text":"Não. O ponto é o registro. A Horalis conecta ponto, férias e benefícios e cuida do que vem depois: resolve cada evento quando ele acontece para que o fechamento da folha vire conferência."}},{"@type":"Question","name":"Já tenho um sistema de ponto. Por que trocar?","acceptedAnswer":{"@type":"Answer","text":"Porque o problema não está em registrar a batida, e sim em fechar o mês sem retrabalho. Se o seu dia 30 ainda tem caça a erros, o sistema atual resolve só a primeira parte."}},{"@type":"Question","name":"Os sistemas grandes não fazem mais pelo mesmo preço?","acceptedAnswer":{"@type":"Answer","text":"Fazem mais do que um DP de 1 a 3 pessoas usa, e cobram por módulo. A Horalis cobra por faixa de funcionários, com tudo incluso, para empresas de 50 a 300 pessoas."}},{"@type":"Question","name":"Trocar de sistema no meio do ano dá trabalho?","acceptedAnswer":{"@type":"Answer","text":"A implantação é feita para DP enxuto, em cerca de 3 semanas, e começa a valer no próximo fechamento. A gente importa funcionários, jornadas e benefícios com você."}},{"@type":"Question","name":"E se der problema justo no dia do fechamento?","acceptedAnswer":{"@type":"Answer","text":"Existe um plantão de suporte do dia 28 ao dia 5, com gente que entende de folha respondendo rápido."}},{"@type":"Question","name":"A folha sai no formato da minha contabilidade?","acceptedAnswer":{"@type":"Answer","text":"Sim. O fechamento conferido gera o arquivo no formato do sistema de folha que a sua contabilidade usa."}}]}]}</script>
+<style>@font-face{font-family:"Instrument Sans Fallback";font-weight:400 500;src:local("Arial"),local("Liberation Sans"),local("Helvetica");size-adjust:100.25%;ascent-override:96.76%;descent-override:24.94%;line-gap-override:0%}
+@font-face{font-family:"Instrument Sans Fallback";font-weight:600 700;src:local("Arial Bold"),local("Arial-BoldMT"),local("Liberation Sans Bold"),local("Helvetica Bold");size-adjust:97.13%;ascent-override:99.86%;descent-override:25.74%;line-gap-override:0%}
+@font-face{font-family:"IBM Plex Mono Fallback";src:local("Courier New"),local("Liberation Mono"),local("Menlo");size-adjust:99.98%;ascent-override:102.52%;descent-override:27.5%;line-gap-override:0%}
+@font-face{font-family:"Instrument Sans";font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/instrument-sans-400.woff2) format("woff2")}
+@font-face{font-family:"Instrument Sans";font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/instrument-sans-500.woff2) format("woff2")}
+@font-face{font-family:"Instrument Sans";font-style:normal;font-weight:600 700;font-display:swap;src:url(assets/fonts/instrument-sans-600.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/ibm-plex-mono-400.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500 600;font-display:swap;src:url(assets/fonts/ibm-plex-mono-500.woff2) format("woff2")}
+
+/* Layout: one-page de produto — header fixo, hero com MonthGrid, faixas alternando Papel e Tinta, tudo em coluna de 1200px. Tokens: Horalis Design System (tokens.css) */
+/* Horalis Design System — gerado a partir de tokens.json */
+:root, [data-theme="light"] {
+  --tinta: #1B2230;
+  --tinta-deep: #141A25;
+  --tinta-device: #0E1219;
+  --papel: #F3EFE6;
+  --papel-raised: #FBF9F4;
+  --lacre: #B8432F;
+  --coral: #E0715B;
+  --grafite: #8A8F98;
+  --linha: #DDD7CA;
+  --bg: var(--papel);
+  --bg-raised: var(--papel-raised);
+  --bg-inverse: var(--tinta);
+  --text: var(--tinta);
+  --text-body: #3A414D;
+  --text-muted: #5A606B;
+  --text-inverse: var(--papel);
+  --line: var(--linha);
+  --line-strong: #737883;
+  --accent: var(--lacre);
+  --action-bg: var(--tinta);
+  --action-bg-hover: #2C3547;
+  --action-text: var(--papel);
+  --dot: var(--grafite);
+  --success: #2F6B4F;
+  --success-soft: #E3EFE7;
+  --warning: #8A5A12;
+  --warning-soft: #F6ECD6;
+  --focus: var(--lacre);
+  --shadow-card: 0 10px 26px rgba(27,34,48,0.12);
+  --shadow-device: 0 40px 80px rgba(27,34,48,0.25);
+}
+[data-theme="dark"] {
+  --bg: var(--tinta-deep);
+  --bg-raised: var(--tinta);
+  --bg-inverse: var(--papel);
+  --text: var(--papel);
+  --text-body: #D5D8DD;
+  --text-muted: #A9AEB8;
+  --text-inverse: var(--tinta);
+  --line: #2E3747;
+  --line-strong: #7B8496;
+  --accent: var(--coral);
+  --action-bg: var(--papel);
+  --action-bg-hover: #FFFFFF;
+  --action-text: var(--tinta);
+  --success: #8FD1AE;
+  --success-soft: #1E3329;
+  --warning: #E6B566;
+  --warning-soft: #33291A;
+  --focus: var(--coral);
+  --shadow-card: 0 10px 26px rgba(0,0,0,0.40);
+  --shadow-device: 0 40px 80px rgba(0,0,0,0.55);
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: var(--tinta-deep);
+  --bg-raised: var(--tinta);
+  --bg-inverse: var(--papel);
+  --text: var(--papel);
+  --text-body: #D5D8DD;
+  --text-muted: #A9AEB8;
+  --text-inverse: var(--tinta);
+  --line: #2E3747;
+  --line-strong: #7B8496;
+  --accent: var(--coral);
+  --action-bg: var(--papel);
+  --action-bg-hover: #FFFFFF;
+  --action-text: var(--tinta);
+  --success: #8FD1AE;
+  --success-soft: #1E3329;
+  --warning: #E6B566;
+  --warning-soft: #33291A;
+  --focus: var(--coral);
+  --shadow-card: 0 10px 26px rgba(0,0,0,0.40);
+  --shadow-device: 0 40px 80px rgba(0,0,0,0.55);
+  color-scheme: dark;
+} }
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-full: 999px;
+  --font-sans: "Instrument Sans", "Instrument Sans Fallback", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--text-body);font-family:var(--font-sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3{color:var(--text);margin:0;font-weight:600;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+.dot{color:var(--accent)}
+.wrap{max-width:1200px;margin:0 auto;padding-inline:var(--space-6)}
+@media (max-width:600px){.wrap{padding-inline:var(--space-4)}}
+section{padding-block:var(--space-24)}
+@media (max-width:760px){section{padding-block:var(--space-16)}}
+.eyebrow{font-family:var(--font-mono);font-size:13px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);margin:0}
+.h-display{font-size:clamp(40px,6.4vw,76px);line-height:1;letter-spacing:-.035em}
+.h-sec{font-size:clamp(30px,4vw,48px);line-height:1.05;letter-spacing:-.03em}
+.lead{font-size:clamp(18px,1.6vw,20px);line-height:1.5;color:var(--text-body);max-width:56ch}
+.sec-head{display:flex;flex-direction:column;gap:var(--space-4);max-width:760px}
+.mono{font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+.inverse{background:var(--tinta);--bg:var(--tinta-deep);--bg-raised:#232B3A;--text:var(--papel);--text-body:#D5D8DD;--text-muted:#A9AEB8;--line:#333C4E;--line-strong:#7B8496;--accent:var(--coral);--action-bg:var(--papel);--action-bg-hover:#fff;--action-text:var(--tinta);--focus:var(--coral);color:var(--text-body)}
+
+/* Componentes do design system (bundle.css) */
+.hr-btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--space-2);font-family:var(--font-sans);font-weight:600;line-height:1.2;border-radius:var(--radius-md);border:1.5px solid transparent;cursor:pointer;text-decoration:none;min-height:44px;transition:background-color .15s ease,border-color .15s ease}
+.hr-btn-md{font-size:15px;padding:12px 18px}
+.hr-btn-lg{font-size:17px;padding:16px 24px}
+.hr-btn-primary{background:var(--action-bg);color:var(--action-text)}
+.hr-btn-primary:hover{background:var(--action-bg-hover)}
+.hr-btn-secondary{background:transparent;color:var(--text);border-color:var(--line-strong)}
+.hr-btn-secondary:hover{border-color:var(--text)}
+.hr-btn-link{background:transparent;color:var(--text);padding-inline:2px;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px}
+.hr-btn-link:hover{text-decoration-color:var(--accent)}
+:where(.hr-btn,.hr-field-input,.hr-faq summary,.nav a):focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+.hr-badge{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;line-height:1.2;padding:5px 10px;border-radius:var(--radius-full);border:1.5px solid transparent;white-space:nowrap}
+.hr-badge-neutral{background:var(--bg-raised);color:var(--text);border-color:var(--line)}
+.hr-badge-success{background:var(--success-soft);color:var(--success)}
+.hr-badge-accent{background:transparent;color:var(--accent);border-color:var(--accent);font-family:var(--font-mono);font-weight:500;letter-spacing:.1em;text-transform:uppercase;border-radius:var(--radius-sm)}
+.hr-metric{display:flex;flex-direction:column;gap:var(--space-3);background:var(--bg-raised);border:1px solid var(--line);border-radius:var(--radius-md);padding:var(--space-6);min-width:0}
+.hr-metric-value{font-family:var(--font-mono);font-size:clamp(34px,3.4vw,44px);font-weight:500;letter-spacing:-.02em;line-height:1;font-variant-numeric:tabular-nums;color:var(--text)}
+.hr-metric-note{font-size:15px;line-height:1.45;color:var(--text-body)}
+.hr-month{margin:0;background:var(--bg-raised);border:1px solid var(--line);border-radius:var(--radius-md);padding:var(--space-6);display:flex;flex-direction:column;gap:var(--space-4);box-shadow:var(--shadow-card)}
+.hr-month-head{display:flex;justify-content:space-between;gap:var(--space-3);font-family:var(--font-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted)}
+.hr-month-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+.hr-day{display:flex;flex-direction:column;align-items:center;gap:6px;padding:4px 0}
+.hr-day-n{font-family:var(--font-mono);font-size:11px;color:var(--text-muted);font-variant-numeric:tabular-nums}
+.hr-day-slot{width:20px;height:20px;display:flex;align-items:center;justify-content:center}
+.hr-day-dot{width:10px;height:10px;border-radius:50%;background:var(--dot);opacity:.35;transition:opacity .25s ease,transform .25s ease}
+.hr-day-dot.done{opacity:1}
+.hr-day-dot.final{background:var(--accent);opacity:1;width:20px;height:20px}
+.hr-day-dot.final.pre{transform:scale(.5);background:var(--dot);opacity:.35}
+.hr-month-foot{border-top:1px solid var(--line);padding-top:var(--space-4);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:var(--space-3)}
+.hr-month-pending{display:flex;flex-direction:column;gap:2px}
+.hr-month-pending b{font-family:var(--font-mono);font-size:26px;font-weight:500;line-height:1.1;color:var(--text)}
+.hr-event{display:grid;grid-template-columns:110px 150px minmax(0,1fr) auto;gap:var(--space-4);align-items:center;padding:var(--space-3) 0;border-bottom:1px solid var(--line);font-size:15px}
+.hr-event:last-child{border-bottom:0}
+.hr-event-type{font-family:var(--font-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted)}
+.hr-event-name{font-weight:600;color:var(--text)}
+.hr-event-desc{color:var(--text-body);min-width:0}
+@media (max-width:620px){.hr-event{grid-template-columns:1fr auto;gap:4px var(--space-3)}.hr-event-type{grid-column:1/-1}.hr-event-desc{grid-column:1/-1;grid-row:3}}
+.hr-transform{display:grid;grid-template-columns:minmax(0,1fr) 40px minmax(0,1.4fr);gap:var(--space-4);align-items:center;padding:var(--space-4) 0;border-bottom:1px solid var(--line)}
+.hr-transform-from{color:var(--text-muted);text-decoration:line-through;text-decoration-color:var(--line-strong);font-size:16px}
+.hr-transform-arrow{color:var(--text-muted);font-family:var(--font-mono)}
+.hr-transform-to{color:var(--text);font-size:20px;font-weight:600;letter-spacing:-.01em;line-height:1.25}
+@media (max-width:620px){.hr-transform{grid-template-columns:1fr;gap:4px}.hr-transform-arrow{display:none}}
+.hr-field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.hr-field-label{font-size:14px;font-weight:600;color:var(--text)}
+.hr-field-box{display:flex;align-items:center;background:var(--bg-raised);border:1.5px solid var(--line-strong);border-radius:var(--radius-md);min-height:44px;padding-inline:var(--space-3)}
+.hr-field-box:focus-within{border-color:var(--text)}
+.hr-field-input{flex:1;min-width:0;border:0;background:transparent;color:var(--text);font-family:var(--font-mono);font-size:16px;font-variant-numeric:tabular-nums;padding:10px 4px}
+.hr-field-input:focus-visible{outline:none}
+.hr-field-affix{font-family:var(--font-mono);font-size:14px;color:var(--text-muted)}
+.hr-field-hint{font-size:13px;color:var(--text-muted)}
+.hr-faq{border-bottom:1px solid var(--line)}
+.hr-faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:var(--space-4);padding:var(--space-6) 0;font-size:clamp(18px,1.8vw,21px);font-weight:600;letter-spacing:-.01em;color:var(--text);min-height:44px}
+.hr-faq summary::-webkit-details-marker{display:none}
+.hr-faq-icon{flex:none;width:12px;height:12px;border-radius:50%;border:1.5px solid var(--text);transition:background-color .15s ease,border-color .15s ease}
+.hr-faq[open] .hr-faq-icon{background:var(--accent);border-color:var(--accent)}
+.hr-faq-body{padding:0 0 var(--space-6);color:var(--text-body);font-size:16.5px;line-height:1.6;max-width:62ch}
+
+/* Header */
+.site-head{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .2s}
+.site-head.scrolled{border-bottom-color:var(--line)}
+.head-row{display:flex;align-items:center;justify-content:space-between;gap:var(--space-6);min-height:72px}
+.logo{display:inline-flex;color:var(--text);line-height:0}
+.logo svg{height:30px;width:auto}
+.nav{display:flex;align-items:center;gap:var(--space-8);font-size:15px;font-weight:500}
+.nav a{text-decoration:none;color:var(--text-body)}
+.nav a:hover{color:var(--text)}
+.nav .hr-btn{color:var(--action-text)}
+@media (max-width:860px){.nav .nav-link{display:none}}
+@media (max-width:420px){.nav .hr-btn{padding:10px 12px;font-size:14px}.logo svg{height:24px}}
+
+/* Hero */
+.hero{padding-block:var(--space-16) var(--space-24)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:var(--space-16);align-items:center}
+.hero-text{display:flex;flex-direction:column;gap:var(--space-6);min-width:0}
+.ctas{display:flex;flex-wrap:wrap;gap:var(--space-3);align-items:center}
+.hero-proof{display:flex;flex-wrap:wrap;gap:var(--space-2) var(--space-6);font-family:var(--font-mono);font-size:13px;color:var(--text-muted);padding-top:var(--space-2)}
+.hero-proof span::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--dot);margin-right:8px;vertical-align:middle}
+@media (max-width:960px){.hero-grid{grid-template-columns:1fr;gap:var(--space-12)}.hero .hr-month{max-width:460px}}
+
+/* Problema */
+.problem-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--space-16);align-items:center}
+.symptoms{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.symptoms li{display:grid;grid-template-columns:56px minmax(0,1fr);gap:var(--space-4);padding:var(--space-6) 0;border-top:1px solid var(--line)}
+.symptoms li:last-child{border-bottom:1px solid var(--line)}
+.symptoms .mono{font-size:13px;color:var(--text-muted);padding-top:4px}
+.symptoms b{display:block;color:var(--text);font-size:19px;font-weight:600;letter-spacing:-.01em;margin-bottom:4px}
+.poster{position:relative;border-radius:var(--radius-md);overflow:hidden;aspect-ratio:4/5;max-width:100%}
+.poster canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.poster-cap{position:absolute;left:24px;right:24px;bottom:22px;display:flex;justify-content:space-between;align-items:end;gap:12px}
+.poster-cap b{font-size:clamp(22px,2.4vw,30px);line-height:1.1;letter-spacing:-.02em;font-weight:600}
+.poster-cap .mono{font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.poster-top{position:absolute;left:24px;right:24px;top:20px;display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+@media (max-width:860px){.problem-grid{grid-template-columns:1fr;gap:var(--space-12)}.problem-grid .poster{max-width:440px}}
+
+/* Virada */
+.turn{text-align:left}
+.turn .h-display{max-width:16ch}
+.turn-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:var(--space-16);align-items:end}
+.turn-grid p{font-size:19px;max-width:40ch}
+@media (max-width:860px){.turn-grid{grid-template-columns:1fr;gap:var(--space-8)}}
+
+/* Transformação */
+.metrics{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:var(--space-4);margin-top:var(--space-12)}
+.metrics .hr-metric{grid-column:span 2}
+.metrics .hr-metric:nth-child(n+4){grid-column:span 3}
+.hr-metric .unit{font-size:.45em;color:var(--text-muted);margin-left:4px;letter-spacing:0}
+.foot-note{margin-top:var(--space-6);font-size:14px;color:var(--text-muted)}
+.transforms{margin-top:var(--space-16);border-top:1px solid var(--line)}
+@media (max-width:900px){.metrics{grid-template-columns:1fr 1fr}.metrics .hr-metric,.metrics .hr-metric:nth-child(n+4){grid-column:span 1}.metrics .hr-metric:last-child{grid-column:1/-1}}
+@media (max-width:520px){.metrics{grid-template-columns:1fr}.metrics .hr-metric:last-child{grid-column:auto}}
+
+/* Como funciona */
+.how-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:var(--space-16);align-items:start;margin-top:var(--space-12)}
+.steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:var(--space-8);counter-reset:s}
+.steps li{display:grid;grid-template-columns:40px minmax(0,1fr);gap:var(--space-4)}
+.steps .n{font-family:var(--font-mono);font-size:13px;color:var(--text-muted);border:1.5px solid var(--line-strong);border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center}
+.steps h3{font-size:21px;letter-spacing:-.015em;margin-bottom:6px}
+.device{background:var(--tinta-device);border-radius:var(--radius-lg);padding:10px;box-shadow:var(--shadow-device);min-width:0}
+.app{background:var(--papel);color:#3A414D;border-radius:6px;overflow:hidden;--bg-raised:#FBF9F4;--text:#1B2230;--text-body:#3A414D;--text-muted:#5A606B;--line:#DDD7CA;--line-strong:#737883;--success:#2F6B4F;--success-soft:#E3EFE7;--accent:#B8432F;--dot:#8A8F98}
+.app-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;border-bottom:1px solid var(--line);background:var(--bg-raised)}
+.app-bar svg{height:18px;width:auto;color:#1B2230}
+.app-bar .tabs{display:flex;gap:18px;font-size:13px;color:var(--text-muted)}
+.app-bar .tabs b{color:var(--text);font-weight:600}
+.app-body{padding:22px;display:flex;flex-direction:column;gap:18px}
+.app-title{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px}
+.app-title h3{font-size:22px;letter-spacing:-.02em;color:var(--text)}
+.app-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.app-stat{background:var(--bg-raised);border:1px solid var(--line);border-radius:6px;padding:14px}
+.app-stat span{display:block;font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted)}
+.app-stat b{display:block;font-family:var(--font-mono);font-weight:500;font-size:28px;color:var(--text);margin-top:6px;font-variant-numeric:tabular-nums}
+.app-list{background:var(--bg-raised);border:1px solid var(--line);border-radius:6px;padding:4px 16px}
+.app-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;font-size:14px}
+.app-foot .send{background:#1B2230;color:#F3EFE6;border-radius:6px;padding:10px 14px;font-weight:600;font-size:14px}
+@media (max-width:960px){.how-grid{grid-template-columns:1fr;gap:var(--space-12)}}
+@media (max-width:520px){.app-stats{grid-template-columns:1fr 1fr 1fr}.app-stat b{font-size:22px}.app-stat span{font-size:9.5px;letter-spacing:.03em}.app-bar .tabs{display:none}.app-body{padding:14px}}
+
+/* Calculadora */
+.calc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--space-12);margin-top:var(--space-12);align-items:stretch}
+.calc-form{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-6) var(--space-4)}
+.calc-form .full{grid-column:1/-1}
+.calc-out{background:var(--bg-raised);border:1px solid var(--line);border-radius:var(--radius-md);padding:var(--space-8);display:flex;flex-direction:column;gap:var(--space-6)}
+.calc-big{font-family:var(--font-mono);font-size:clamp(40px,5vw,60px);font-weight:500;letter-spacing:-.03em;line-height:1;color:var(--text);font-variant-numeric:tabular-nums}
+.calc-rows{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.calc-rows div{display:flex;justify-content:space-between;gap:var(--space-4);padding:var(--space-3) 0;border-bottom:1px solid var(--line);font-size:15px}
+.calc-rows b{font-family:var(--font-mono);font-weight:500;color:var(--text);font-variant-numeric:tabular-nums;white-space:nowrap}
+@media (max-width:900px){.calc{grid-template-columns:1fr}}
+@media (max-width:460px){.calc-form{grid-template-columns:1fr}}
+
+/* Tamanho certo + preços */
+.ruler{margin-top:var(--space-12);border-radius:var(--radius-md);overflow:hidden;position:relative;height:clamp(220px,30vw,360px);background:var(--papel)}
+.ruler canvas{position:absolute;inset:0;width:100%;height:100%}
+.plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-4);margin-top:var(--space-12)}
+.plan{background:var(--bg-raised);border:1px solid var(--line);border-radius:var(--radius-md);padding:var(--space-8) var(--space-6);display:flex;flex-direction:column;gap:var(--space-4);min-width:0}
+.plan.pick{border-color:var(--text);box-shadow:inset 0 0 0 1px var(--text)}
+.plan-range{font-family:var(--font-mono);font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted);display:flex;justify-content:space-between;gap:8px}
+.plan-price{font-family:var(--font-mono);font-size:40px;font-weight:500;letter-spacing:-.02em;color:var(--text);line-height:1;font-variant-numeric:tabular-nums}
+.plan-price small{font-size:15px;color:var(--text-muted);letter-spacing:0}
+.plan ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;font-size:15px}
+.plan li{display:flex;gap:10px}
+.plan li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--text);margin-top:9px}
+.plan .hr-btn{margin-top:auto}
+.included{margin-top:var(--space-6);display:flex;flex-wrap:wrap;gap:var(--space-2) var(--space-8);font-size:15px;color:var(--text-body)}
+.included b{color:var(--text)}
+@media (max-width:900px){.plans{grid-template-columns:1fr}}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:var(--space-16)}
+@media (max-width:860px){.faq-grid{grid-template-columns:1fr;gap:var(--space-8)}}
+
+/* CTA final */
+.final-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:var(--space-16);align-items:center}
+.final-grid .poster{max-width:440px;justify-self:end;width:100%}
+@media (max-width:860px){.final-grid{grid-template-columns:1fr;gap:var(--space-12)}.final-grid .poster{justify-self:start}}
+
+/* Footer */
+.site-foot{padding-block:var(--space-12);border-top:1px solid var(--line)}
+.foot-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:var(--space-6)}
+.foot-row nav{display:flex;flex-wrap:wrap;gap:var(--space-6);font-size:15px}
+.foot-row nav a{text-decoration:none;color:var(--text-body)}
+.foot-row nav a:hover{color:var(--text)}
+.foot-note2{font-size:14px;color:var(--text-muted)}
+@media (prefers-reduced-motion:reduce){.hr-btn,.hr-faq-icon,.hr-day-dot{transition:none}}
+
+/* ===== v1.1 ===== */
+.ic{width:20px;height:20px;flex:none}
+[hidden]{display:none!important}
+.hr-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.hero-proof span::before{display:none}
+.hero-proof span{display:inline-flex;align-items:center;gap:8px}
+.hero-proof .ic{width:18px;height:18px;color:var(--accent)}
+.metrics .hr-metric-value{color:var(--accent)}
+.steps .n{background:var(--accent);color:var(--tinta);border:0;font-weight:600;font-size:15px;width:34px;height:34px}
+.calc-big{color:var(--accent)}
+.calc-actions{display:flex;flex-wrap:wrap;gap:var(--space-3);align-items:center}
+
+/* Hero: variantes */
+.hero-visual{position:relative;min-width:0}
+.hv{display:none}
+.hv.on{display:block}
+.hv-a{background:var(--tinta);color:#D5D8DD;border-radius:var(--radius-lg);padding:28px;box-shadow:var(--shadow-device);--line:#333C4E}
+.hv-a .eyebrow{color:#A9AEB8}
+.hv-row{padding:20px 0;border-bottom:1px solid #333C4E;display:flex;flex-direction:column;gap:14px}
+.hv-row:last-of-type{border-bottom:0}
+.hv-row-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.hv-row-head span{font-size:15px;font-weight:600;color:#F3EFE6}
+.hv-row-head .hv-dur{font-family:var(--font-mono);font-weight:500;font-size:clamp(34px,3.6vw,46px);letter-spacing:-.03em;line-height:1;color:#F3EFE6;font-variant-numeric:tabular-nums}
+.hv-dur.ok{color:var(--coral)}
+.hv-dur small{font-size:.38em;color:#A9AEB8;letter-spacing:0;margin-left:6px}
+.track{position:relative;height:12px;border-radius:999px;background:#2A3242}
+.track i{position:absolute;left:0;top:0;bottom:0;border-radius:999px}
+.track .bad{width:100%;background:repeating-linear-gradient(90deg,#7B8496 0 10px,#5E6676 10px 14px)}
+.track .good{width:6%;background:var(--coral)}
+.track .end{position:absolute;top:50%;width:22px;height:22px;border-radius:50%;background:var(--coral);transform:translate(-50%,-50%);left:6%;box-shadow:0 0 0 5px rgba(224,113,91,.2)}
+.track-scale{display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:11px;color:#7B8496;letter-spacing:.06em}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:500;padding:5px 9px;border-radius:999px;background:#2A2A2E;color:#E6B566;border:1px solid #4A3E26}
+.chip .ic{width:14px;height:14px}
+.chip.ok{background:#1E3329;color:#8FD1AE;border-color:#2E4D3D}
+.hv-ev{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:18px}
+.hv-ev div{background:#232B3A;border-radius:6px;padding:12px}
+.hv-ev b{display:block;font-family:var(--font-mono);font-weight:500;font-size:clamp(18px,1.7vw,22px);color:var(--coral);font-variant-numeric:tabular-nums;white-space:nowrap}
+.hv-ev span{display:block;font-size:12.5px;line-height:1.35;color:#A9AEB8;margin-top:4px}
+@media (prefers-reduced-motion:no-preference){
+ .hv.on .track i,.hv.on .track .end{animation:grow .9s cubic-bezier(.2,.7,.2,1) both}
+ .hv.on .track .end{animation-name:pop;animation-delay:.9s;animation-duration:.4s}
+ @keyframes grow{from{transform:scaleX(0);transform-origin:left}to{transform:scaleX(1);transform-origin:left}}
+ @keyframes pop{from{transform:translate(-50%,-50%) scale(0)}to{transform:translate(-50%,-50%) scale(1)}}
+}
+
+.hv-b{background:var(--papel-raised);color:#3A414D;border-radius:4px;padding:30px 30px 26px;box-shadow:var(--shadow-device);position:relative;--line:#DDD7CA}
+.hv-b::before,.hv-b::after{content:"";position:absolute;left:0;right:0;height:10px;background:radial-gradient(circle at 7px -2px,transparent 6px,var(--papel-raised) 6.5px) repeat-x;background-size:14px 10px}
+.hv-b::before{top:-9px;transform:rotate(180deg)}
+.hv-b::after{bottom:-9px}
+.rc-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:1.5px dashed #C9C2B3;padding-bottom:14px}
+.rc-head b{font-size:19px;color:#1B2230;letter-spacing:-.01em}
+.rc-head span{font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;color:#5A606B;text-transform:uppercase}
+.rc{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}
+.rc th{font-family:var(--font-mono);font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:#5A606B;text-align:right;padding:10px 0 6px}
+.rc th:first-child{text-align:left}
+.rc td{padding:10px 0;border-bottom:1px dotted #C9C2B3;vertical-align:top}
+.rc td+td{text-align:right;font-family:var(--font-mono);font-variant-numeric:tabular-nums;white-space:nowrap;padding-left:12px;color:#1B2230}
+.rc td.was{color:#8A8F98;text-decoration:line-through;text-decoration-color:#B8432F}
+.rc tr.total td{border-bottom:0;border-top:1.5px solid #1B2230;font-weight:600;color:#1B2230;padding-top:12px}
+.rc tr.total td.was{text-decoration:none;color:#5A606B}
+.rc-save{margin-top:14px;display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap}
+.rc-save span{font-size:13px;color:#5A606B}
+.rc-save b{display:block;font-family:var(--font-mono);font-weight:500;font-size:clamp(30px,3.2vw,40px);letter-spacing:-.03em;color:#B8432F;line-height:1.05;font-variant-numeric:tabular-nums}
+.stamp{position:absolute;right:26px;top:30px;border:2.5px solid #B8432F;color:#B8432F;font-family:var(--font-mono);font-weight:500;font-size:15px;letter-spacing:.14em;padding:6px 12px;transform:rotate(-9deg);opacity:.9;border-radius:3px;mix-blend-mode:multiply}
+@media (max-width:520px){.hv-a{padding:20px}.hv-b{padding:24px 18px 20px}.hv-ev{grid-template-columns:1fr 1fr 1fr}.hv-ev div{padding:10px}.stamp{top:24px;right:14px;font-size:12px}.chip{font-size:12px}}
+
+.hero-switch{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;display:flex;align-items:center;gap:4px;background:var(--tinta);color:#F3EFE6;border-radius:999px;padding:5px 5px 5px 14px;box-shadow:0 8px 24px rgba(0,0,0,.25);font-size:12.5px}
+.hero-switch span{font-family:var(--font-mono);letter-spacing:.06em;text-transform:uppercase;font-size:11px;color:#A9AEB8;margin-right:6px}
+.hero-switch button{font:inherit;font-weight:600;border:0;border-radius:999px;padding:7px 12px;background:transparent;color:#F3EFE6;cursor:pointer}
+.hero-switch button[aria-pressed="true"]{background:var(--coral);color:#1B2230}
+.hero-switch button:focus-visible{outline:2px solid var(--coral);outline-offset:2px}
+
+/* Comparativo */
+.cmp-wrap{margin-top:var(--space-12);overflow-x:auto;-webkit-overflow-scrolling:touch}
+.cmp{width:100%;min-width:760px;border-collapse:separate;border-spacing:0;font-size:15px}
+.cmp th,.cmp td{padding:18px 20px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+.cmp thead th{font-size:17px;font-weight:600;color:var(--text);border-bottom:1.5px solid var(--text)}
+.cmp thead th small{display:block;font-family:var(--font-mono);font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted);margin-top:4px}
+.cmp tbody th{font-family:var(--font-mono);font-size:12px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted);width:18%}
+.cmp td{color:var(--text-body);width:27%}
+.cmp td .cell{display:flex;gap:10px;align-items:flex-start}
+.cmp td .ic{width:18px;height:18px;margin-top:2px;color:var(--text-muted)}
+.cmp .hl{background:var(--tinta);color:#D5D8DD;border-bottom-color:#333C4E}
+.cmp thead .hl{color:#F3EFE6;border-radius:var(--radius-md) var(--radius-md) 0 0;border-bottom-color:var(--coral)}
+.cmp thead .hl small{color:#A9AEB8}
+.cmp tbody tr:last-child .hl{border-radius:0 0 var(--radius-md) var(--radius-md);border-bottom:0}
+.cmp .hl .ic{color:var(--coral)}
+.cmp .hl b{color:#F3EFE6;font-weight:600}
+
+/* Planos v1.1 */
+.plans{align-items:stretch}
+.plan-name{font-size:22px;font-weight:600;color:var(--text);letter-spacing:-.015em}
+.plan-price{color:var(--accent)}
+.plan li{align-items:flex-start}
+.plan li::before{display:none}
+.plan li .ic{width:18px;height:18px;margin-top:2px;color:var(--accent)}
+.plan .incl{font-size:13px;font-weight:600;color:var(--text);padding-top:var(--space-2);border-top:1px solid var(--line)}
+.plan.feat{background:var(--tinta);border-color:var(--tinta);color:#D5D8DD;--text:#F3EFE6;--text-muted:#A9AEB8;--line:#333C4E;position:relative;box-shadow:var(--shadow-device)}
+.plan.feat .plan-price{color:#F3EFE6}
+.plan.feat li .ic{color:var(--coral)}
+.plan.feat .flag{position:absolute;top:-13px;left:24px;background:var(--coral);color:#1B2230;font-family:var(--font-mono);font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:999px}
+.plan.feat .hr-btn-primary{background:#F3EFE6;color:#1B2230}
+.plan.feat .hr-btn-primary:hover{background:#fff}
+.plan.pick:not(.feat){border-color:var(--text);box-shadow:inset 0 0 0 1px var(--text)}
+.plan.feat.pick{box-shadow:var(--shadow-device),0 0 0 3px var(--coral)}
+@media (min-width:901px){.plan.feat{transform:translateY(-12px)}}
+.incl-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4);margin-top:var(--space-8)}
+.incl-item{display:flex;gap:var(--space-4);align-items:flex-start;background:var(--bg-raised);border:1px solid var(--line);border-radius:var(--radius-md);padding:var(--space-6)}
+.incl-item .ico{flex:none;width:44px;height:44px;border-radius:var(--radius-md);background:var(--accent);color:var(--papel);display:flex;align-items:center;justify-content:center}
+.incl-item .ico .ic{width:22px;height:22px}
+.incl-item b{display:block;color:var(--text);font-size:17px;margin-bottom:2px}
+.incl-item p{font-size:15px}
+@media (max-width:760px){.incl-grid{grid-template-columns:1fr}}
+
+/* Rodapé v1.1 */
+.foot-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:var(--space-8);align-items:start}
+.foot-brand{display:flex;flex-direction:column;gap:var(--space-3)}
+.foot-brand p{font-size:15px;color:var(--text-body);max-width:40ch}
+.foot-side{display:flex;flex-direction:column;gap:var(--space-4);align-items:flex-end;text-align:right}
+.foot-side nav{display:flex;flex-wrap:wrap;gap:var(--space-6);justify-content:flex-end;font-size:15px}
+.foot-side nav a{text-decoration:none;color:var(--text-body)}
+.foot-side nav a:hover{color:var(--text)}
+.foot-bottom{margin-top:var(--space-8);padding-top:var(--space-6);border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--space-3);font-size:14px;color:var(--text-muted)}
+.foot-bottom a{color:var(--text);text-underline-offset:3px}
+@media (max-width:760px){.foot-grid{grid-template-columns:1fr}.foot-side{align-items:flex-start;text-align:left}.foot-side nav{justify-content:flex-start}}
+
+/* Modal de diagnóstico */
+dialog.dx{border:0;padding:0;border-radius:var(--radius-lg);width:min(560px,calc(100vw - 32px));max-height:calc(100dvh - 32px);background:var(--bg-raised);color:var(--text-body);box-shadow:var(--shadow-device)}
+dialog.dx::backdrop{background:rgba(20,26,37,.6);backdrop-filter:blur(3px)}
+.dx-in{padding:var(--space-8);display:flex;flex-direction:column;gap:var(--space-6)}
+.dx-head{display:flex;justify-content:space-between;gap:var(--space-4);align-items:flex-start}
+.dx-head h2{font-size:28px;letter-spacing:-.02em;line-height:1.1}
+.dx-close{flex:none;width:40px;height:40px;border-radius:50%;border:1.5px solid var(--line-strong);background:transparent;color:var(--text);cursor:pointer;display:flex;align-items:center;justify-content:center}
+.dx-close:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.dx-form{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4)}
+.dx-form .full{grid-column:1/-1}
+.dx-form select.hr-field-input{font-family:var(--font-sans);appearance:none;cursor:pointer}
+.dx-form .hr-field-input{font-family:var(--font-sans)}
+.dx-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:15px}
+.dx-list li{display:flex;gap:10px}
+.dx-list .ic{color:var(--accent);width:18px;height:18px;margin-top:3px}
+.dx-err{color:var(--warning);font-size:14px;min-height:1em}
+.dx-done{display:flex;flex-direction:column;gap:var(--space-4)}
+.dx-done .big{width:56px;height:56px;border-radius:50%;background:var(--accent);color:var(--papel);display:flex;align-items:center;justify-content:center}
+.dx-done .big .ic{width:28px;height:28px}
+.dx-note{font-size:13px;color:var(--text-muted)}
+@media (max-width:520px){.dx-in{padding:var(--space-6)}.dx-form{grid-template-columns:1fr}}
+
+/* v1.2 */
+.lacre-bg{background-color:var(--lacre);background-image:radial-gradient(rgba(27,34,48,.13) 1.3px,transparent 1.8px);background-size:14px 14px;--text:#F3EFE6;--text-body:#FBF3EE;--text-muted:#F3EFE6;--accent:#1B2230;color:var(--text-body)}
+.lacre-bg .eyebrow{opacity:.85}
+.final-grid .receipt{max-width:480px;width:100%;justify-self:end}
+@media (max-width:860px){.final-grid .receipt{justify-self:start}}
+#tamanho-certo .cmp-wrap{margin-top:var(--space-12)}
+
+/* v1.3 — responsivo */
+.cmp-cards{display:none}
+@media (max-width:760px){
+  .cmp-wrap{display:none}
+  .cmp-cards{display:flex;flex-direction:column;gap:var(--space-4);margin-top:var(--space-8)}
+  .cmp-card{border:1px solid var(--line);border-radius:var(--radius-md);padding:var(--space-6);background:var(--bg-raised);display:flex;flex-direction:column;gap:var(--space-4)}
+  .cmp-card.hl{background:var(--tinta);border-color:var(--tinta);color:#D5D8DD;box-shadow:var(--shadow-card)}
+  .cmp-card h3{font-size:21px;letter-spacing:-.015em}
+  .cmp-card.hl h3{color:#F3EFE6}
+  .cmp-card h3 small{display:block;font-family:var(--font-mono);font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted);margin-top:4px}
+  .cmp-card.hl h3 small{color:#A9AEB8}
+  .cmp-card dl{margin:0;display:flex;flex-direction:column}
+  .cmp-card dl div{display:flex;flex-direction:column;gap:4px;padding:var(--space-3) 0;border-top:1px solid var(--line)}
+  .cmp-card.hl dl div{border-top-color:#333C4E}
+  .cmp-card dt{font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted)}
+  .cmp-card.hl dt{color:#A9AEB8}
+  .cmp-card dd{margin:0;display:flex;gap:10px;align-items:flex-start;font-size:15.5px}
+  .cmp-card dd .ic{width:18px;height:18px;margin-top:2px;color:var(--text-muted)}
+  .cmp-card.hl dd .ic{color:var(--coral)}
+  .cmp-card.hl b{color:#F3EFE6}
+}
+@media (max-width:600px){
+  .ctas{flex-direction:column;align-items:stretch}
+  .ctas .hr-btn{width:100%}
+  .calc-actions{flex-direction:column;align-items:stretch}
+  .calc-actions .hr-btn-primary{width:100%;padding-inline:14px;font-size:16px}
+  .hr-btn-lg{padding-inline:18px}
+  .calc-actions .hr-btn-link{align-self:center}
+  .calc-out{padding:var(--space-6)}
+  .hero{padding-block:var(--space-8) var(--space-16)}
+  .hero-text{gap:var(--space-4)}
+  .hero-proof{flex-direction:column;gap:6px}
+  .h-sec{font-size:clamp(28px,8vw,34px)}
+  .lead{font-size:17px}
+  .turn-grid p{font-size:17px}
+  .hv-ev{grid-template-columns:1fr !important;gap:6px}
+  .hv-ev div{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:10px 12px}
+  .hv-ev span{margin-top:0;text-align:right}
+  .track-scale span:nth-child(2):last-child{display:none}
+  .rc-head{flex-direction:column;align-items:flex-start}
+  .stamp{position:static;display:inline-block;transform:rotate(-4deg);margin-bottom:6px;align-self:flex-start;order:-1}
+  .receipt,.hv-b{display:flex;flex-direction:column}
+  .plan{padding:var(--space-6)}
+  .incl-item{padding:var(--space-4)}
+  .metrics{gap:var(--space-3)}
+  .hr-metric{padding:var(--space-4) var(--space-6)}
+  .symptoms li{grid-template-columns:36px minmax(0,1fr)}
+  .foot-side .hr-btn{width:100%}
+  .dx-form .hr-btn{width:100%}
+}
+.foot-side nav a,.foot-row nav a{display:inline-flex;align-items:center;min-height:44px}
+.calc-actions .hr-btn-link{min-height:44px}
+
+/* v1.4 — larguras máximas e menu mobile */
+.site-head{background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;border-bottom:0;padding:10px var(--space-4) 0;pointer-events:none}
+.site-head > *{pointer-events:auto}
+.site-head .head-row{max-width:1200px;margin:0 auto;min-height:64px;padding-inline:var(--space-4) var(--space-3);background:color-mix(in srgb,var(--bg-raised) 86%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:var(--radius-lg);transition:box-shadow .2s}
+.site-head.scrolled .head-row{box-shadow:var(--shadow-card)}
+.burger{display:none;width:44px;height:44px;border-radius:var(--radius-md);border:1.5px solid var(--line-strong);background:transparent;color:var(--text);cursor:pointer;align-items:center;justify-content:center}
+.burger .ic{width:22px;height:22px}
+.burger .b-close{display:none}
+.burger[aria-expanded="true"] .b-open{display:none}
+.burger[aria-expanded="true"] .b-close{display:inline-flex}
+.burger:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.mnav{max-width:1200px;margin:8px auto 0;background:var(--bg-raised);border:1px solid var(--line);border-radius:var(--radius-lg);padding:var(--space-2) var(--space-4) var(--space-4);box-shadow:var(--shadow-card);display:flex;flex-direction:column}
+.mnav a:not(.hr-btn){display:flex;justify-content:space-between;align-items:center;min-height:52px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--text);font-size:18px;font-weight:600;letter-spacing:-.01em}
+.mnav a:not(.hr-btn) .ic{color:var(--text-muted);width:18px;height:18px}
+.mnav .hr-btn{margin-top:var(--space-4)}
+@media (max-width:860px){.burger{display:inline-flex}.nav{gap:var(--space-2)}}
+@media (min-width:861px){.mnav{display:none!important}}
+@media (max-width:400px){.nav-cta{display:none}}
+html{scroll-padding-top:96px}
+
+/* Larguras máximas em telas médias e pequenas */
+.hr-btn{max-width:100%}
+@media (max-width:960px){
+  .hero-text,.sec-head,.turn-grid > *,.problem-grid > div:first-child,.steps,.calc-form,.calc-out,.faq-grid > div{max-width:640px}
+  .hero-visual{max-width:520px}
+  .how-grid .device{max-width:640px}
+}
+@media (max-width:900px){
+  .plans{grid-template-columns:1fr;max-width:520px}
+  .incl-grid{max-width:640px}
+  .metrics{max-width:640px}
+  .transforms{max-width:640px}
+}
+@media (max-width:760px){.cmp-cards{max-width:520px}}
+@media (max-width:600px){
+  .ctas .hr-btn,.calc-actions .hr-btn-primary,.foot-side .hr-btn,.mnav .hr-btn{width:100%;max-width:400px}
+  .ctas{align-items:flex-start}
+}
+@media (min-width:601px) and (max-width:960px){.ctas{flex-direction:row;flex-wrap:wrap}}
+.final-grid .receipt{max-width:460px}
+
+/* publicação — contraste AA, foco, skip link, topo */
+.track-scale{color:#A9AEB8}
+.rc td.was{color:#6B707A}
+.lacre-bg .eyebrow{opacity:1}
+.skip{position:absolute;left:16px;top:-80px;z-index:50;background:var(--tinta);color:var(--papel);padding:12px 16px;border-radius:var(--radius-md);font-weight:600;text-decoration:none}
+.skip:focus{top:12px}
+#topo{position:absolute;top:0;left:0;width:1px;height:1px}
+.logo:focus-visible{outline:2px solid var(--focus);outline-offset:4px;border-radius:4px}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="logo-horalis" viewBox="0 0 691 200"><path fill-rule="evenodd" clip-rule="evenodd" d="M103.059 110.282C115.235 110.282 128.5 116.804 128.5 132.021V194.386C128.5 195.272 127.919 196.054 127.066 196.293C118.458 198.708 109.38 200 100 200C91.7786 200 83.7895 199.006 76.1448 197.135C75.2611 196.918 74.6475 196.121 74.6475 195.211V140.718C74.6475 123.327 86.8234 110.282 103.059 110.282ZM90 147C86.134 147 83 150.134 83 154C83 157.866 86.134 161 90 161C93.866 161 97 157.866 97 154C97 150.134 93.866 147 90 147Z" fill="currentColor"/><path d="M38 174.33C38 176.002 36.0799 176.923 34.8124 175.832C13.4981 157.493 0 130.324 0 100C0 69.6762 13.4979 42.5056 34.8124 24.1666C36.0799 23.0761 38 23.9969 38 25.669V174.33Z" fill="currentColor"/><path d="M100 0C155.228 0 200 44.7715 200 100C200 130.082 186.717 157.06 165.696 175.393C164.432 176.495 162.5 175.577 162.5 173.899V125.5C162.5 95.0654 146.265 75.5002 119.883 75.5C101.635 75.5 89.4741 80.5799 78.3551 92.6675C77.0752 94.0588 74.6475 93.1899 74.6475 91.2994V4.78771C74.6475 3.87788 75.2611 3.08062 76.1448 2.86431C83.7894 0.993171 91.7787 0 100 0Z" fill="currentColor"/><path d="M632.958 149.794C623.466 149.794 615.9 147.824 610.259 143.884C604.618 139.855 601.529 134.303 600.991 127.229H616.437C616.885 130.722 618.541 133.363 621.407 135.154C624.272 136.945 628.122 137.84 632.958 137.84C637.345 137.84 640.613 137.169 642.762 135.825C645.001 134.393 646.12 132.378 646.12 129.781C646.12 127.901 645.493 126.379 644.24 125.215C642.986 123.961 640.613 122.931 637.121 122.126L626.108 119.574C618.586 117.962 612.99 115.455 609.319 112.052C605.737 108.56 603.946 104.217 603.946 99.0239C603.946 92.6665 606.364 87.6969 611.199 84.1153C616.124 80.4441 622.884 78.6085 631.48 78.6085C639.987 78.6085 646.792 80.4441 651.896 84.1153C657.089 87.6969 659.954 92.6665 660.492 99.0239H645.046C644.598 96.2481 643.165 94.1439 640.748 92.7112C638.42 91.2786 635.196 90.5622 631.077 90.5622C627.227 90.5622 624.317 91.189 622.347 92.4426C620.377 93.6067 619.392 95.3527 619.392 97.6808C619.392 99.4716 620.153 100.994 621.675 102.247C623.198 103.411 625.75 104.441 629.331 105.337L641.151 108.023C647.866 109.545 652.925 112.187 656.328 115.947C659.82 119.708 661.566 124.14 661.566 129.244C661.566 135.781 659.059 140.84 654.045 144.421C649.03 148.003 642.001 149.794 632.958 149.794Z" fill="currentColor"/><path d="M572.139 148.451V79.9516H589.063V148.451H572.139ZM575.737 68.6694C573.305 68.6694 571.333 66.6978 571.333 64.2657V54.4037C571.333 51.9716 573.305 50 575.737 50H585.331C587.763 50 589.734 51.9716 589.734 54.4037V64.2657C589.734 66.6978 587.763 68.6694 585.331 68.6694H575.737Z" fill="currentColor"/><path d="M537.25 148.451V51.7461H554.173V148.451H537.25Z" fill="currentColor"/><path d="M505.066 148.451C501.38 133.704 503.186 117.286 503.186 102.247C503.186 98.6657 502.156 95.9795 500.097 94.1887C498.127 92.3083 495.082 91.3681 490.963 91.3681C486.934 91.3681 483.711 92.1292 481.293 93.6514C478.965 95.0841 477.532 97.1883 476.995 99.9641H460.743C461.459 93.6067 464.504 88.458 469.876 84.5182C475.249 80.5784 482.457 78.6085 491.501 78.6085C500.902 78.6085 508.021 80.7575 512.856 85.0554C517.691 89.2639 520.109 95.487 520.109 103.725V134.751C520.109 136.9 520.243 139.094 520.512 141.332C520.87 143.571 521.363 145.944 521.99 148.451H505.066ZM481.002 148.451C474.107 148.451 468.891 148.093 464.772 144.69C460.743 141.198 458.728 136.542 458.728 130.722C458.728 124.454 461.012 119.484 465.578 115.813C470.145 112.142 476.592 109.679 484.919 108.426L506.275 105.202V115.947L487.74 118.768C483.711 119.395 480.666 120.514 478.607 122.126C476.637 123.737 475.652 125.976 475.652 128.841C475.652 131.438 476.592 133.453 478.472 134.885C480.353 136.228 482.949 136.9 486.262 136.9C491.098 136.9 500.818 139.093 503.105 135.79C513.138 121.302 521.99 148.451 505.066 148.451C492.011 148.451 486.911 148.451 481.002 148.451Z" fill="currentColor"/><path d="M412.381 148.451V79.9516H428.902V96.472H429.305V148.451H412.381ZM429.305 112.724L427.559 96.472C429.17 90.6518 431.901 86.2195 435.752 83.1751C439.602 80.1307 444.213 78.6085 449.586 78.6085C451.466 78.6085 452.809 78.7875 453.615 79.1457V95.1289C453.167 94.9498 452.541 94.8602 451.735 94.8602C450.929 94.7707 449.944 94.7259 448.78 94.7259C442.243 94.7259 437.363 96.1586 434.14 99.0239C430.916 101.889 429.305 106.456 429.305 112.724Z" fill="currentColor"/><path d="M363.4 149.794C356.148 149.794 349.745 148.272 344.194 145.227C338.732 142.183 334.479 137.974 331.434 132.602C328.39 127.14 326.867 120.917 326.867 113.933C326.867 106.948 328.39 100.815 331.434 95.5318C334.479 90.2489 338.732 86.1299 344.194 83.1751C349.745 80.1307 356.148 78.6085 363.4 78.6085C370.743 78.6085 377.145 80.1307 382.607 83.1751C388.069 86.1299 392.322 90.2489 395.367 95.5318C398.411 100.815 399.933 106.948 399.933 113.933C399.933 120.917 398.366 127.14 395.232 132.602C392.188 137.974 387.935 142.183 382.473 145.227C377.011 148.272 370.653 149.794 363.4 149.794ZM363.4 136.228C366.982 136.228 370.206 135.333 373.071 133.542C375.936 131.662 378.175 129.065 379.786 125.752C381.398 122.349 382.204 118.365 382.204 113.798C382.204 107.083 380.413 101.8 376.832 97.9494C373.34 94.0991 368.862 92.174 363.4 92.174C357.938 92.174 353.417 94.0991 349.835 97.9494C346.253 101.8 344.462 107.083 344.462 113.798C344.462 118.365 345.268 122.349 346.88 125.752C348.581 129.065 350.82 131.662 353.596 133.542C356.461 135.333 359.729 136.228 363.4 136.228Z" fill="currentColor"/><path d="M250 148.451V51.7461H266.923V148.451H250ZM298.084 148.451V105.202C298.084 100.994 297.009 97.8152 294.86 95.6662C292.711 93.5172 289.577 92.4427 285.458 92.4427C281.877 92.4427 278.653 93.2486 275.788 94.8603C273.012 96.4721 270.818 98.7106 269.207 101.576C267.684 104.441 266.923 107.754 266.923 111.515L265.177 95.129C267.505 90.1146 270.908 86.13 275.385 83.1752C279.862 80.1308 285.235 78.6086 291.502 78.6086C298.934 78.6086 304.71 80.7128 308.829 84.9212C313.037 89.1297 315.141 94.726 315.141 101.71V148.451H298.084Z" fill="currentColor"/><path d="M675.404 148.341C672.972 148.341 671 146.369 671 143.937V133.404C671 130.972 672.972 129 675.404 129H686.072C688.504 129 690.475 130.972 690.475 133.404V143.937C690.475 146.369 688.504 148.341 686.072 148.341H675.404Z" style="fill:var(--accent)"/></symbol></svg><span id="topo"></span>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="site-head">
+  <div class="wrap head-row">
+    <a class="logo" href="#topo" aria-label="Horalis, voltar ao topo da página"><svg viewBox="0 0 691 200" aria-hidden="true" focusable="false"><use href="#logo-horalis"/></svg></a>
+    <nav class="nav" aria-label="Principal">
+      <a class="nav-link" href="#como-funciona">Como funciona</a>
+      <a class="nav-link" href="#precos">Preços por faixa</a>
+      <a class="nav-link" href="#perguntas">Perguntas</a>
+      <a class="hr-btn hr-btn-primary hr-btn-md nav-cta" href="#diagnostico" data-open>Pedir diagnóstico</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Abrir menu"><span class="b-open"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 6l16 0" /> <path d="M4 12l16 0" /> <path d="M4 18l16 0" /></svg></span><span class="b-close"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg></span></button>
+    </nav>
+  </div>
+  <div class="mnav" id="mnav" hidden>
+    <a href="#como-funciona">Como funciona <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l14 0" /> <path d="M13 18l6 -6" /> <path d="M13 6l6 6" /></svg></a>
+    <a href="#tamanho-certo">Do tamanho certo <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l14 0" /> <path d="M13 18l6 -6" /> <path d="M13 6l6 6" /></svg></a>
+    <a href="#calculadora">Calculadora <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l14 0" /> <path d="M13 18l6 -6" /> <path d="M13 6l6 6" /></svg></a>
+    <a href="#precos">Preços por faixa <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l14 0" /> <path d="M13 18l6 -6" /> <path d="M13 6l6 6" /></svg></a>
+    <a href="#perguntas">Perguntas <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l14 0" /> <path d="M13 18l6 -6" /> <path d="M13 6l6 6" /></svg></a>
+    <a class="hr-btn hr-btn-primary hr-btn-lg" href="#diagnostico" data-open>Pedir diagnóstico do fechamento</a>
+  </div>
+</header>
+
+<main id="conteudo">
+  <!-- 1 · Hero -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">Ponto · Férias · Benefícios — para empresas de 50 a 300 pessoas</p>
+        <h1 class="h-display">Feche a folha do mês em horas, não em dias<span class="dot">.</span></h1>
+        <p class="lead">Ponto, férias e benefícios conectados para o DP de empresas de 50 a 300 pessoas, sem precisar contratar mais gente.</p>
+        <div class="ctas">
+          <a class="hr-btn hr-btn-primary hr-btn-lg" href="#diagnostico" data-open>Pedir diagnóstico do fechamento</a>
+          <a class="hr-btn hr-btn-secondary hr-btn-lg" href="#como-funciona">Veja um fechamento na prática</a>
+        </div>
+        <div class="hero-proof"><span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M11.5 21h-5.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v6" /> <path d="M16 3v4" /> <path d="M8 3v4" /> <path d="M4 11h16" /> <path d="M15 19l2 2l4 -4" /></svg>Implantação no próximo fechamento</span><span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 14v-3a8 8 0 1 1 16 0v3" /> <path d="M18 19c0 1.657 -2.686 3 -6 3" /> <path d="M4 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z" /> <path d="M15 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z" /></svg>Plantão nos dias de fechamento</span><span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2" /> <path d="M14 8h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5m2 0v1.5m0 -9v1.5" /></svg>Preço por faixa, sem módulos</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hv hv-a on" id="hv-a" role="img" aria-label="Fechamento de outubro de uma empresa de 150 pessoas: hoje leva 3 dias e acumula pendências; com a Horalis leva 4 horas, sem pendências">
+          <p class="eyebrow">Fechamento de outubro · 150 pessoas</p>
+          <div class="hv-row">
+            <div class="hv-row-head"><span>Hoje</span><span class="hv-dur">3<small>dias</small></span></div>
+            <div class="track"><i class="bad"></i></div>
+            <div class="track-scale"><span>28/10</span><span>29/10</span><span>30/10</span></div>
+            <div class="chips"><span class="chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.986 12.502a9 9 0 1 0 -5.973 7.98" /> <path d="M12 7v5l3 3" /> <path d="M19 16v3" /> <path d="M19 22v.01" /></svg>14 batidas faltando</span><span class="chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3v4a1 1 0 0 0 1 1h4" /> <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /> <path d="M12 17l.01 0" /> <path d="M12 11l0 3" /></svg>6 atestados soltos</span><span class="chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /> <path d="M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 1 0 0 4h2a2 2 0 1 1 0 4h-2a2 2 0 0 1 -1.8 -1" /> <path d="M12 7v10" /></svg>VR pago em férias</span><span class="chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 9v4" /> <path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z" /> <path d="M12 16h.01" /></svg>5 retificações</span></div>
+          </div>
+          <div class="hv-row">
+            <div class="hv-row-head"><span>Com a Horalis</span><span class="hv-dur ok">4<small>horas</small></span></div>
+            <div class="track"><i class="good"></i><span class="end"></span></div>
+            <div class="track-scale"><span>30/10 · das 9h às 13h</span><span>mesma escala de 3 dias</span></div>
+            <div class="chips"><span class="chip ok"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /> <path d="M9 12l2 2l4 -4" /></svg>0 pendências</span><span class="chip ok"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 14l11 -11" /> <path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5" /></svg>Folha enviada com 3 dias de antecedência</span></div>
+          </div>
+          <div class="hv-ev"><div><b>−20 h</b><span>de DP por mês</span></div><div><b>−60%</b><span>de retificações</span></div><div><b>R$ 900</b><span>em benefícios indevidos evitados</span></div></div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · Problema -->
+  <section id="problema" style="padding-top:0">
+    <div class="wrap problem-grid">
+      <div style="display:flex;flex-direction:column;gap:var(--space-8);min-width:0">
+        <div class="sec-head">
+          <p class="eyebrow">O dia 30 de quem fecha a folha</p>
+          <h2 class="h-sec">O dia 30 não deveria ser uma caça a erros<span class="dot">.</span></h2>
+        </div>
+        <ol class="symptoms">
+          <li><span class="mono">01</span><div><b>Tudo aparece no último dia.</b>Batidas faltando, atestados soltos no e-mail e horas extras sem aprovação chegam juntos, na véspera do envio.</div></li>
+          <li><span class="mono">02</span><div><b>Controles que não conversam.</b>Férias numa planilha, benefícios em outra, ponto no relógio. Nenhum bate com o outro sem conferência manual.</div></li>
+          <li><span class="mono">03</span><div><b>O erro aparece depois do envio.</b>A contabilidade devolve, a folha é retificada e o funcionário descobre na conta.</div></li>
+        </ol>
+      </div>
+      <div class="poster" style="background:#1B2230;color:#F3EFE6">
+        <canvas data-poster="thirty" aria-hidden="true"></canvas>
+        <div class="poster-top"><span>Fechamento</span><span>Último dia útil</span></div>
+        <div class="poster-cap"><b>Dia 30 é só conferir<span style="color:#E0715B">.</span></b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · Virada -->
+  <section class="lacre-bg turn" id="virada">
+    <div class="wrap turn-grid">
+      <div style="display:flex;flex-direction:column;gap:var(--space-6)">
+        <p class="eyebrow">A virada</p>
+        <h2 class="h-display">O problema não é registrar o ponto. É fechar o mês<span class="dot">.</span></h2>
+      </div>
+      <p>Ponto você já registra. A Horalis cuida do que vem depois: cada evento do mês é resolvido quando acontece, e o fechamento vira conferência.</p>
+    </div>
+  </section>
+
+  <!-- 4 · Transformação -->
+  <section id="resultados">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">O que muda no seu mês</p>
+        <h2 class="h-sec">Menos horas, menos retrabalho, o mesmo time<span class="dot">.</span></h2>
+      </div>
+      <div class="metrics">
+        <div class="hr-metric"><span class="hr-metric-value">−20<span class="unit">h/mês</span></span><span class="hr-metric-note">no fechamento da folha</span></div>
+        <div class="hr-metric"><span class="hr-metric-value">−60%</span><span class="hr-metric-note">de retificações depois do envio à contabilidade</span></div>
+        <div class="hr-metric"><span class="hr-metric-value">2,5×</span><span class="hr-metric-note">mais funcionários atendidos por pessoa do DP</span></div>
+        <div class="hr-metric"><span class="hr-metric-value">R$ 900<span class="unit">/mês</span></span><span class="hr-metric-note">em benefícios indevidos evitados</span></div>
+        <div class="hr-metric"><span class="hr-metric-value">3<span class="unit">dias</span></span><span class="hr-metric-note">de antecedência no envio da folha</span></div>
+      </div>
+      <p class="foot-note">Estimativas para uma empresa de 150 pessoas com um DP de 2 pessoas.</p>
+      <div class="transforms" aria-label="O que o mercado promete e o que a Horalis entrega">
+        <div class="hr-transform"><span class="hr-transform-from">Automatize os processos do seu RH</span><span class="hr-transform-arrow" aria-hidden="true">→</span><span class="hr-transform-to">20 horas a menos por mês no fechamento da folha</span></div>
+        <div class="hr-transform"><span class="hr-transform-from">Simples e intuitiva</span><span class="hr-transform-arrow" aria-hidden="true">→</span><span class="hr-transform-to">60% menos retificações depois do envio</span></div>
+        <div class="hr-transform"><span class="hr-transform-from">Plataforma completa</span><span class="hr-transform-arrow" aria-hidden="true">→</span><span class="hr-transform-to">2,5 vezes mais funcionários por pessoa do DP</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Do tamanho certo -->
+  <section id="tamanho-certo" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Do tamanho certo</p>
+        <h2 class="h-sec">Nem planilha, nem ERP<span class="dot">.</span></h2>
+        <p class="lead">A planilha não aguenta 50 pessoas. O ERP foi feito para mil, com módulos que um DP de 1 a 3 pessoas não usa. A Horalis foi feita para o meio do caminho.</p>
+      </div>
+      <div class="cmp-wrap" tabindex="0" aria-label="Comparativo entre planilha, Horalis e ERP">
+        <table class="cmp">
+          <thead><tr><th scope="col"><span class="hr-sr">Critério</span></th><th scope="col">Planilha<small>Até ~50 pessoas</small></th><th scope="col" class="hl">Horalis<small>50 a 300 pessoas</small></th><th scope="col">ERP de RH<small>500+ pessoas</small></th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Fechamento</th><td><div class="cell"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg><span>Conferência manual no dia 30</span></div></td><td class="hl"><div class="cell"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg><span><b>Pendências resolvidas no dia</b>, fechamento conferido</span></div></td><td><div class="cell"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg><span>Depende de módulos e consultoria</span></div></td></tr>
+            <tr><th scope="row">Implantação</th><td><div class="cell"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg><span>Imediata, mas sem controle</span></div></td><td class="hl"><div class="cell"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg><span><b>3 semanas</b>, valendo no próximo fechamento</span></div></td><td><div class="cell"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg><span>3 a 6 meses de projeto</span></div></td></tr>
+            <tr><th scope="row">Preço</th><td><div class="cell"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg><span>Grátis, pago em horas do DP</span></div></td><td class="hl"><div class="cell"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg><span><b>Por faixa de funcionários</b>, tudo incluso</span></div></td><td><div class="cell"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg><span>Por módulo e por usuário</span></div></td></tr>
+            <tr><th scope="row">Suporte no fechamento</th><td><div class="cell"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg><span>Nenhum</span></div></td><td class="hl"><div class="cell"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg><span><b>Plantão do dia 28 ao dia 5</b></span></div></td><td><div class="cell"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg><span>Chamado com prazo de resposta</span></div></td></tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+  </section>
+
+  <!-- 5 · Como funciona -->
+  <section id="como-funciona" class="inverse">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Como funciona</p>
+        <h2 class="h-sec">Pendência resolvida no dia, mês fechado no dia 30<span class="dot">.</span></h2>
+      </div>
+      <div class="how-grid">
+        <ol class="steps">
+          <li><span class="n">1</span><div><h3>Pendências aparecem quando acontecem</h3><p>Batida faltando, atestado ou hora extra sem aprovação viram uma pendência no mesmo dia, para o gestor ou para o DP, e não no dia 30.</p></div></li>
+          <li><span class="n">2</span><div><h3>Um lançamento, todos os reflexos</h3><p>Férias e atestados ajustam ponto, banco de horas e benefícios de uma vez. Ninguém precisa repetir a informação em outra planilha.</p></div></li>
+          <li><span class="n">3</span><div><h3>Fechamento conferido</h3><p>Com o checklist zerado, a folha sai para a contabilidade no formato do seu sistema, com antecedência.</p></div></li>
+        </ol>
+        <div class="device" role="img" aria-label="Tela da Horalis: fechamento de outubro com tudo conferido, zero pendências, 47 eventos resolvidos e 150 funcionários">
+          <div class="app">
+            <div class="app-bar"><svg viewBox="0 0 691 200" aria-hidden="true" focusable="false"><use href="#logo-horalis"/></svg><div class="tabs"><b>Fechamento</b><span>Ponto</span><span>Férias</span><span>Benefícios</span></div></div>
+            <div class="app-body">
+              <div class="app-title"><h3>Fechamento · Outubro</h3><span class="hr-badge hr-badge-success">Tudo conferido</span></div>
+              <div class="app-stats">
+                <div class="app-stat"><span>Pendências</span><b>0</b></div>
+                <div class="app-stat"><span>Resolvidos</span><b>47</b></div>
+                <div class="app-stat"><span>Funcionários</span><b>150</b></div>
+              </div>
+              <div class="app-list">
+                <div class="hr-event"><span class="hr-event-type">Atestado · 27/10</span><span class="hr-event-name">Marina Costa</span><span class="hr-event-desc">Ponto e banco de horas ajustados</span><span class="hr-badge hr-badge-success">Resolvido</span></div>
+                <div class="hr-event"><span class="hr-event-type">Férias · 20/10</span><span class="hr-event-name">Rafael Lima</span><span class="hr-event-desc">Reflexo no VR e no banco de horas</span><span class="hr-badge hr-badge-success">Resolvido</span></div>
+                <div class="hr-event"><span class="hr-event-type">Hora extra · 30/10</span><span class="hr-event-name">Logística</span><span class="hr-event-desc">12 h aprovadas pelo gestor</span><span class="hr-badge hr-badge-success">Resolvido</span></div>
+                <div class="hr-event"><span class="hr-event-type">Benefício · 31/10</span><span class="hr-event-name">Desligamento</span><span class="hr-event-desc">VR cancelado no próximo ciclo</span><span class="hr-badge hr-badge-success">Resolvido</span></div>
+              </div>
+              <div class="app-foot"><span>Checklist do mês: 12 de 12 itens</span><span class="send">Enviar à contabilidade</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · Calculadora -->
+  <section id="calculadora">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Custo do fechamento</p>
+        <h2 class="h-sec">Quanto custa o seu fechamento hoje<span class="dot">?</span></h2>
+        <p class="lead">Preencha com os números do seu DP. O cálculo considera metade das horas de fechamento devolvidas e os benefícios indevidos evitados.</p>
+      </div>
+      <div class="calc">
+        <form class="calc-form" id="calc" novalidate>
+          <label class="hr-field"><span class="hr-field-label">Funcionários</span><span class="hr-field-box"><input class="hr-field-input" id="c-func" name="funcionarios" type="number" inputmode="numeric" min="1" value="150"><span class="hr-field-affix">pessoas</span></span></label>
+          <label class="hr-field"><span class="hr-field-label">Pessoas no DP</span><span class="hr-field-box"><input class="hr-field-input" id="c-dp" name="pessoas_dp" type="number" inputmode="numeric" min="1" value="2"><span class="hr-field-affix">pessoas</span></span></label>
+          <label class="hr-field"><span class="hr-field-label">Horas de fechamento por mês</span><span class="hr-field-box"><input class="hr-field-input" id="c-horas" name="horas_fechamento" type="number" inputmode="numeric" min="0" value="40"><span class="hr-field-affix">h</span></span><span class="hr-field-hint">Somando todas as pessoas do DP</span></label>
+          <label class="hr-field"><span class="hr-field-label">Custo da hora</span><span class="hr-field-box"><span class="hr-field-affix">R$</span><input class="hr-field-input" id="c-custo" name="custo_hora" type="number" inputmode="decimal" min="0" value="45"></span><span class="hr-field-hint">Salário mais encargos</span></label>
+          <label class="hr-field full"><span class="hr-field-label">Benefícios pagos indevidamente por mês</span><span class="hr-field-box"><span class="hr-field-affix">R$</span><input class="hr-field-input" id="c-ben" name="beneficios_indevidos" type="number" inputmode="decimal" min="0" value="900"></span><span class="hr-field-hint">VR, VT e outros pagos a quem estava de férias, afastado ou desligado</span></label>
+        </form>
+        <div class="calc-out" aria-live="polite">
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <span class="eyebrow">Economia estimada por ano</span>
+            <span class="calc-big" id="o-ano">R$ 21.600</span>
+          </div>
+          <div class="calc-rows">
+            <div><span>Por mês</span><b id="o-mes">R$ 1.800</b></div>
+            <div><span>Horas devolvidas ao DP</span><b id="o-horas">20 h/mês</b></div>
+            <div><span>Funcionários por pessoa do DP</span><b id="o-ratio">75 hoje · até 187</b></div>
+            <div><span>Faixa de preço indicada</span><b id="o-faixa">101 a 200</b></div>
+          </div>
+          <div class="calc-actions"><a class="hr-btn hr-btn-primary hr-btn-lg" href="#diagnostico" data-open>Pedir diagnóstico do fechamento</a><a class="hr-btn hr-btn-link hr-btn-md" href="#como-funciona">Veja um fechamento</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planos -->
+  <section id="precos" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Planos</p>
+        <h2 class="h-sec">Um plano para o tamanho do seu DP<span class="dot">.</span></h2>
+        <p class="lead">Você paga pela faixa de funcionários, nunca por módulo. O que muda de um plano para o outro é o que a operação pede quando cresce: aprovações, integrações e filiais.</p>
+      </div>
+      <div class="plans">
+        <article class="plan" data-plan="1">
+          <div class="plan-range"><span>50 a 100 funcionários</span></div>
+          <div class="plan-name">Essencial</div>
+          <div class="plan-price">R$ 890<small> /mês</small></div>
+          <ul>
+            <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg><span>Ponto, férias e benefícios conectados</span></li>
+            <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg><span>Fechamento conferido e envio à contabilidade</span></li>
+            <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg><span>Implantação guiada em 3 semanas</span></li>
+            <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg><span>Suporte por chat em horário comercial</span></li>
+          </ul>
+          <a class="hr-btn hr-btn-secondary hr-btn-md" href="#diagnostico" data-open data-faixa="50 a 100">Solicitar proposta</a>
+        </article>
+        <article class="plan feat" data-plan="2">
+          <span class="flag">Mais escolhido</span>
+          <div class="plan-range"><span>101 a 200 funcionários</span></div>
+          <div class="plan-name">Gestão</div>
+          <div class="plan-price">R$ 1.590<small> /mês</small></div>
+          <ul>
+            <li class="incl">Tudo do Essencial, mais:</li>
+            <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg><span>Aprovação de horas extras pelos gestores</span></li>
+            <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg><span>Integração com o sistema de folha da contabilidade</span></li>
+            <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg><span>Relatório mensal para o RH e os sócios</span></li>
+          </ul>
+          <a class="hr-btn hr-btn-primary hr-btn-md" href="#diagnostico" data-open data-faixa="101 a 200">Solicitar proposta</a>
+        </article>
+        <article class="plan" data-plan="3">
+          <div class="plan-range"><span>201 a 300 funcionários</span></div>
+          <div class="plan-name">Escala</div>
+          <div class="plan-price">R$ 2.290<small> /mês</small></div>
+          <ul>
+            <li class="incl">Tudo do Gestão, mais:</li>
+            <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg><span>Vários CNPJs e filiais</span></li>
+            <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg><span>Regras de jornada por equipe e acordo coletivo</span></li>
+            <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg><span>Gerente de conta dedicado</span></li>
+          </ul>
+          <a class="hr-btn hr-btn-secondary hr-btn-md" href="#diagnostico" data-open data-faixa="201 a 300">Solicitar proposta</a>
+        </article>
+      </div>
+      <div class="incl-grid">
+        <div class="incl-item"><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5" /> <path d="M12 12l8 -4.5" /> <path d="M12 12l0 9" /> <path d="M12 12l-8 -4.5" /> <path d="M16 5.25l-8 4.5" /></svg></span><div><b>Sem módulos, em todos os planos</b><p>Ponto, férias e benefícios no mesmo preço. Nada de cobrança por funcionalidade.</p></div></div>
+        <div class="incl-item"><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /> <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /> <path d="M15 15l3.35 3.35" /> <path d="M9 15l-3.35 3.35" /> <path d="M5.65 5.65l3.35 3.35" /> <path d="M18.35 5.65l-3.35 3.35" /></svg></span><div><b>Plantão nos dias de fechamento</b><p>Do dia 28 ao dia 5, gente que entende de folha responde em minutos.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · Perguntas -->
+  <section id="perguntas" style="padding-top:0">
+    <div class="wrap faq-grid">
+      <div class="sec-head">
+        <p class="eyebrow">Perguntas</p>
+        <h2 class="h-sec">Antes de trocar de sistema<span class="dot">.</span></h2>
+      </div>
+      <div id="faq"><details class="hr-faq"><summary>É só um sistema de ponto?<span class="hr-faq-icon" aria-hidden="true"></span></summary><p class="hr-faq-body">Não. O ponto é o registro. A Horalis conecta ponto, férias e benefícios e cuida do que vem depois: resolve cada evento quando ele acontece para que o fechamento da folha vire conferência.</p></details><details class="hr-faq"><summary>Já tenho um sistema de ponto. Por que trocar?<span class="hr-faq-icon" aria-hidden="true"></span></summary><p class="hr-faq-body">Porque o problema não está em registrar a batida, e sim em fechar o mês sem retrabalho. Se o seu dia 30 ainda tem caça a erros, o sistema atual resolve só a primeira parte.</p></details><details class="hr-faq"><summary>Os sistemas grandes não fazem mais pelo mesmo preço?<span class="hr-faq-icon" aria-hidden="true"></span></summary><p class="hr-faq-body">Fazem mais do que um DP de 1 a 3 pessoas usa, e cobram por módulo. A Horalis cobra por faixa de funcionários, com tudo incluso, para empresas de 50 a 300 pessoas.</p></details><details class="hr-faq"><summary>Trocar de sistema no meio do ano dá trabalho?<span class="hr-faq-icon" aria-hidden="true"></span></summary><p class="hr-faq-body">A implantação é feita para DP enxuto, em cerca de 3 semanas, e começa a valer no próximo fechamento. A gente importa funcionários, jornadas e benefícios com você.</p></details><details class="hr-faq"><summary>E se der problema justo no dia do fechamento?<span class="hr-faq-icon" aria-hidden="true"></span></summary><p class="hr-faq-body">Existe um plantão de suporte do dia 28 ao dia 5, com gente que entende de folha respondendo rápido.</p></details><details class="hr-faq"><summary>A folha sai no formato da minha contabilidade?<span class="hr-faq-icon" aria-hidden="true"></span></summary><p class="hr-faq-body">Sim. O fechamento conferido gera o arquivo no formato do sistema de folha que a sua contabilidade usa.</p></details></div>
+    </div>
+  </section>
+
+  <!-- 9 · CTA final -->
+  <section class="inverse" id="diagnostico">
+    <div class="wrap final-grid">
+      <div style="display:flex;flex-direction:column;gap:var(--space-6);min-width:0">
+        <p class="eyebrow">Horalis</p>
+        <h2 class="h-display">Todo mês com ponto final<span class="dot">.</span></h2>
+        <p class="lead">Em 20 minutos, a gente olha o seu fechamento atual e mostra onde estão as horas e o dinheiro que ficam pelo caminho.</p>
+        <div class="ctas"><a class="hr-btn hr-btn-primary hr-btn-lg" href="#diagnostico" data-open>Pedir diagnóstico do fechamento</a><a class="hr-btn hr-btn-secondary hr-btn-lg" href="#como-funciona">Veja um fechamento na prática</a></div>
+      </div>
+      <div class="hv-b receipt" role="img" aria-label="A conta do fechamento de outubro: hoje custa R$ 2.700 por mês; com a Horalis, R$ 900. Economia de R$ 1.800 por mês">
+          <div class="rc-head"><div><b>A conta do fechamento</b><span style="display:block;margin-top:4px">Outubro · 150 pessoas</span></div></div>
+          <table class="rc">
+            <thead><tr><th></th><th>Hoje</th><th>Horalis</th></tr></thead>
+            <tbody>
+              <tr><td>Horas do DP no fechamento</td><td class="was">40 h</td><td>20 h</td></tr>
+              <tr><td>Custo dessas horas (R$ 45/h)</td><td class="was">R$ 1.800</td><td>R$ 900</td></tr>
+              <tr><td>Benefícios pagos indevidamente</td><td class="was">R$ 900</td><td>R$ 0</td></tr>
+              <tr><td>Retificações depois do envio</td><td class="was">5</td><td>2</td></tr>
+              <tr class="total"><td>Total do mês</td><td class="was">R$ 2.700</td><td>R$ 900</td></tr>
+            </tbody>
+          </table>
+          <div class="rc-save"><div><span>Economia no mês</span><b>R$ 1.800</b></div><div style="text-align:right"><span>No ano</span><b style="font-size:clamp(22px,2.2vw,26px);color:#1B2230">R$ 21.600</b></div></div>
+          <span class="stamp" aria-hidden="true">CONFERIDO</span>
+        </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="#topo" aria-label="Horalis, voltar ao topo da página"><svg viewBox="0 0 691 200" aria-hidden="true" focusable="false"><use href="#logo-horalis"/></svg></a>
+        <p>Gestão de ponto, férias e benefícios conectados, para fechar a folha do mês sem retrabalho. Feito para o DP de empresas de 50 a 300 pessoas.</p>
+      </div>
+      <div class="foot-side">
+        <nav aria-label="Rodapé"><a href="#como-funciona">Como funciona</a><a href="#calculadora">Calculadora</a><a href="#precos">Preços por faixa</a><a href="#perguntas">Perguntas</a></nav>
+        <a class="hr-btn hr-btn-primary hr-btn-md" href="#diagnostico" data-open>Pedir diagnóstico</a>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Horalis</span><span>Construído por Akaishi Design Studio · <a href="https://akaishidesign.com.br" target="_blank" rel="noopener">akaishidesign.com.br</a></span></div>
+  </div>
+</footer>
+
+<dialog class="dx" id="dx" aria-labelledby="dx-title">
+  <div class="dx-in" id="dx-form-wrap">
+    <div class="dx-head">
+      <div style="display:flex;flex-direction:column;gap:8px"><p class="eyebrow">Diagnóstico do fechamento · 20 min</p><h2 id="dx-title">Descubra quanto o seu fechamento custa hoje<span class="dot">.</span></h2></div>
+      <button class="dx-close" type="button" data-close aria-label="Fechar"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg></button>
+    </div>
+    <ul class="dx-list"><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg><span>Onde estão as horas perdidas no seu fechamento</span></li><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg><span>Quanto vai em retificações e benefícios indevidos</span></li><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg><span>Um plano de implantação para o próximo fechamento</span></li></ul>
+    <form class="dx-form" id="dx-form" novalidate>
+      <label class="hr-field"><span class="hr-field-label">Nome</span><span class="hr-field-box"><input class="hr-field-input" id="dx-nome" name="nome" autocomplete="name" required></span></label>
+      <label class="hr-field"><span class="hr-field-label">E-mail de trabalho</span><span class="hr-field-box"><input class="hr-field-input" id="dx-email" name="email" type="email" autocomplete="email" required></span></label>
+      <label class="hr-field"><span class="hr-field-label">Empresa</span><span class="hr-field-box"><input class="hr-field-input" id="dx-empresa" name="empresa" autocomplete="organization"></span></label>
+      <label class="hr-field"><span class="hr-field-label">Funcionários</span><span class="hr-field-box"><select class="hr-field-input" id="dx-faixa" name="faixa"><option>50 a 100</option><option selected>101 a 200</option><option>201 a 300</option><option>Outra faixa</option></select></span></label>
+      <label class="hr-field full"><span class="hr-field-label">O que mais pesa no seu fechamento?</span><span class="hr-field-box"><select class="hr-field-input" id="dx-dor" name="dor"><option>Horas de conferência no fim do mês</option><option>Retificações depois do envio</option><option>Benefícios pagos indevidamente</option><option>Tudo isso junto</option></select></span></label>
+      <p class="dx-err full" id="dx-err" role="alert"></p>
+      <button class="hr-btn hr-btn-primary hr-btn-lg full" type="submit">Pedir diagnóstico</button>
+    </form>
+  </div>
+  <div class="dx-in dx-done" id="dx-done" hidden>
+    <div class="dx-head"><span class="big"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5l10 -10" /></svg></span><button class="dx-close" type="button" data-close aria-label="Fechar"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg></button></div>
+    <h2 style="font-size:28px;letter-spacing:-.02em" id="dx-done-title">Pedido registrado<span class="dot">.</span></h2>
+    <p>Um especialista em DP vai te chamar em até 1 dia útil para marcar os 20 minutos do diagnóstico.</p>
+    <p class="dx-note">Este site é uma demonstração: nenhum dado foi enviado.</p>
+    <button class="hr-btn hr-btn-secondary hr-btn-md" type="button" data-close>Voltar ao site</button>
+  </div>
+</dialog>
+
+
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>
