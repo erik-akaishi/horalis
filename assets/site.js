@@ -54,10 +54,19 @@ calc();
  m.querySelectorAll('a:not([data-open])').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(!t)return;e.preventDefault();set(false);requestAnimationFrame(()=>{t.scrollIntoView({behavior:reduce?'auto':'smooth'});history.replaceState(null,'',a.getAttribute('href'));});}));
  m.querySelectorAll('a[data-open]').forEach(a=>a.addEventListener('click',()=>set(false)));
  addEventListener('keydown',e=>{if(e.key==='Escape'&&!m.hidden){set(false);b.focus();}});
- matchMedia('(min-width:861px)').addEventListener('change',e=>{if(e.matches)set(false);});})();
+ matchMedia('(min-width:901px)').addEventListener('change',e=>{if(e.matches)set(false);});})();
 
 /* Logo: volta ao topo */
 document.querySelectorAll('a.logo').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();window.scrollTo({top:0,behavior:reduce?'auto':'smooth'});history.replaceState(null,'',location.pathname);const s=document.querySelector('.skip');if(s)s.focus({preventScroll:true});}));
+
+/* Appear ao rolar: um observer, stagger entre irmãos */
+(function(){window.__rv=1;
+ const els=[...document.querySelectorAll('.rv,.rv-kids > li')];
+ const groups=new Map();els.forEach(e=>{const p=e.parentElement;const i=groups.get(p)||0;groups.set(p,i+1);e.style.setProperty('--d',Math.min(i*.1,.5)+'s');});
+ if(!('IntersectionObserver' in window)){els.forEach(e=>e.classList.add('in'));return;}
+ const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}}),{rootMargin:'0px 0px -8% 0px',threshold:.08});
+ els.forEach(e=>io.observe(e));})();
+
 /* Modal de diagnóstico */
 const dx=document.getElementById('dx'),fw=document.getElementById('dx-form-wrap'),done=document.getElementById('dx-done');
 function openDx(faixa){

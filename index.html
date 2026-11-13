@@ -30,6 +30,7 @@
 <meta name="twitter:title" content="Horalis · Feche a folha do mês em horas, não em dias">
 <meta name="twitter:description" content="Ponto, férias e benefícios conectados para o DP de empresas de 50 a 300 pessoas. Pendências resolvidas durante o mês e fechamento da folha conferido, sem retrabalho.">
 <meta name="twitter:image" content="https://erik-akaishi.github.io/horalis/assets/og-horalis.png">
+<script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__rv){document.querySelectorAll(".rv").forEach(function(e){e.classList.add("in")})}},2500)</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://erik-akaishi.github.io/horalis/#org","name":"Horalis","url":"https://erik-akaishi.github.io/horalis/","logo":"https://erik-akaishi.github.io/horalis/assets/logo-horalis.png","description":"Software de ponto, férias e benefícios para o departamento pessoal de empresas de 50 a 300 pessoas."},{"@type":"WebSite","@id":"https://erik-akaishi.github.io/horalis/#site","url":"https://erik-akaishi.github.io/horalis/","name":"Horalis","inLanguage":"pt-BR","publisher":{"@id":"https://erik-akaishi.github.io/horalis/#org"}},{"@type":"WebPage","@id":"https://erik-akaishi.github.io/horalis/#page","url":"https://erik-akaishi.github.io/horalis/","name":"Horalis · Feche a folha do mês em horas, não em dias","description":"Ponto, férias e benefícios conectados para o DP de empresas de 50 a 300 pessoas. Pendências resolvidas durante o mês e fechamento da folha conferido, sem retrabalho.","inLanguage":"pt-BR","isPartOf":{"@id":"https://erik-akaishi.github.io/horalis/#site"},"about":{"@id":"https://erik-akaishi.github.io/horalis/#app"},"primaryImageOfPage":"https://erik-akaishi.github.io/horalis/assets/og-horalis.png"},{"@type":"SoftwareApplication","@id":"https://erik-akaishi.github.io/horalis/#app","name":"Horalis","url":"https://erik-akaishi.github.io/horalis/","applicationCategory":"BusinessApplication","applicationSubCategory":"Gestão de ponto, férias e benefícios","operatingSystem":"Web","inLanguage":"pt-BR","description":"Ponto, férias e benefícios conectados para fechar a folha do mês em horas, não em dias. Feito para o DP de empresas de 50 a 300 pessoas.","audience":{"@type":"BusinessAudience","name":"Departamento pessoal de empresas de 50 a 300 funcionários"},"featureList":["Pendências de ponto resolvidas no dia em que acontecem","Férias e atestados ajustam ponto, banco de horas e benefícios de uma vez","Fechamento conferido e envio da folha à contabilidade","Plantão de suporte do dia 28 ao dia 5","Preço por faixa de funcionários, sem módulos"],"offers":[{"@type":"Offer","name":"Essencial (50 a 100 funcionários)","price":"890","priceCurrency":"BRL","url":"https://erik-akaishi.github.io/horalis/#precos"},{"@type":"Offer","name":"Gestão (101 a 200 funcionários)","price":"1590","priceCurrency":"BRL","url":"https://erik-akaishi.github.io/horalis/#precos"},{"@type":"Offer","name":"Escala (201 a 300 funcionários)","price":"2290","priceCurrency":"BRL","url":"https://erik-akaishi.github.io/horalis/#precos"}],"publisher":{"@id":"https://erik-akaishi.github.io/horalis/#org"}},{"@type":"FAQPage","@id":"https://erik-akaishi.github.io/horalis/#faq","mainEntity":[{"@type":"Question","name":"É só um sistema de ponto?","acceptedAnswer":{"@type":"Answer","text":"Não. O ponto é o registro. A Horalis conecta ponto, férias e benefícios e cuida do que vem depois: resolve cada evento quando ele acontece para que o fechamento da folha vire conferência."}},{"@type":"Question","name":"Já tenho um sistema de ponto. Por que trocar?","acceptedAnswer":{"@type":"Answer","text":"Porque o problema não está em registrar a batida, e sim em fechar o mês sem retrabalho. Se o seu dia 30 ainda tem caça a erros, o sistema atual resolve só a primeira parte."}},{"@type":"Question","name":"Os sistemas grandes não fazem mais pelo mesmo preço?","acceptedAnswer":{"@type":"Answer","text":"Fazem mais do que um DP de 1 a 3 pessoas usa, e cobram por módulo. A Horalis cobra por faixa de funcionários, com tudo incluso, para empresas de 50 a 300 pessoas."}},{"@type":"Question","name":"Trocar de sistema no meio do ano dá trabalho?","acceptedAnswer":{"@type":"Answer","text":"A implantação é feita para DP enxuto, em cerca de 3 semanas, e começa a valer no próximo fechamento. A gente importa funcionários, jornadas e benefícios com você."}},{"@type":"Question","name":"E se der problema justo no dia do fechamento?","acceptedAnswer":{"@type":"Answer","text":"Existe um plantão de suporte do dia 28 ao dia 5, com gente que entende de folha respondendo rápido."}},{"@type":"Question","name":"A folha sai no formato da minha contabilidade?","acceptedAnswer":{"@type":"Answer","text":"Sim. O fechamento conferido gera o arquivo no formato do sistema de folha que a sua contabilidade usa."}}]}]}</script>
 <style>@font-face{font-family:"Instrument Sans Fallback";font-weight:400 500;src:local("Arial"),local("Liberation Sans"),local("Helvetica");size-adjust:100.25%;ascent-override:96.76%;descent-override:24.94%;line-gap-override:0%}
 @font-face{font-family:"Instrument Sans Fallback";font-weight:600 700;src:local("Arial Bold"),local("Arial-BoldMT"),local("Liberation Sans Bold"),local("Helvetica Bold");size-adjust:97.13%;ascent-override:99.86%;descent-override:25.74%;line-gap-override:0%}
@@ -225,7 +226,7 @@ section{padding-block:var(--space-24)}
 .nav a{text-decoration:none;color:var(--text-body)}
 .nav a:hover{color:var(--text)}
 .nav .hr-btn{color:var(--action-text)}
-@media (max-width:860px){.nav .nav-link{display:none}}
+@media (max-width:900px){.nav .nav-link{display:none}}
 @media (max-width:420px){.nav .hr-btn{padding:10px 12px;font-size:14px}.logo svg{height:24px}}
 
 /* Hero */
@@ -565,9 +566,9 @@ dialog.dx::backdrop{background:rgba(20,26,37,.6);backdrop-filter:blur(3px)}
 .mnav a:not(.hr-btn){display:flex;justify-content:space-between;align-items:center;min-height:52px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--text);font-size:18px;font-weight:600;letter-spacing:-.01em}
 .mnav a:not(.hr-btn) .ic{color:var(--text-muted);width:18px;height:18px}
 .mnav .hr-btn{margin-top:var(--space-4)}
-@media (max-width:860px){.burger{display:inline-flex}.nav{gap:var(--space-2)}}
-@media (min-width:861px){.mnav{display:none!important}}
-@media (max-width:400px){.nav-cta{display:none}}
+@media (max-width:900px){.burger{display:inline-flex}.nav{gap:var(--space-2)}}
+@media (min-width:901px){.mnav{display:none!important}}
+@media (max-width:380px){.nav-cta{display:none}}
 html{scroll-padding-top:96px}
 
 /* Larguras máximas em telas médias e pequenas */
@@ -599,6 +600,26 @@ html{scroll-padding-top:96px}
 .skip:focus{top:12px}
 #topo{position:absolute;top:0;left:0;width:1px;height:1px}
 .logo:focus-visible{outline:2px solid var(--focus);outline-offset:4px;border-radius:4px}
+
+/* v1.5 — animações leves (appear + hover) */
+@keyframes rv-in{from{opacity:0;transform:translateY(20px)}}
+@keyframes hero-in{from{transform:translateY(18px)}}
+@media (prefers-reduced-motion:no-preference){
+  .js .rv:not(.in),.js .rv-kids > li:not(.in){opacity:0}
+  .js .rv.in,.js .rv-kids > li.in{animation:rv-in .7s cubic-bezier(.2,.7,.2,1) backwards;animation-delay:var(--d,0s)}
+  .js .hero-text > *,.js .hero-visual{animation:hero-in .8s cubic-bezier(.2,.7,.2,1) backwards}
+  .js .hero-text > :nth-child(2){animation-delay:.05s}.js .hero-text > :nth-child(3){animation-delay:.1s}.js .hero-text > :nth-child(4){animation-delay:.15s}.js .hero-text > :nth-child(5){animation-delay:.2s}.js .hero-visual{animation-delay:.12s}
+}
+@media (hover:hover) and (prefers-reduced-motion:no-preference){
+  .hr-btn{transition:background-color .15s ease,border-color .15s ease,transform .2s ease,box-shadow .2s ease}
+  .hr-btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(20,26,37,.14)}
+  .hr-metric,.plan,.incl-item,.cmp-card,.app-stat,.symptoms li{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+  .hr-metric:hover,.plan:not(.feat):hover,.incl-item:hover,.app-stat:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(20,26,37,.10)}
+  .plan.feat:hover{transform:translateY(-15px)}
+  .nav a.nav-link,.foot-side nav a,.foot-bottom a,.mnav a:not(.hr-btn){transition:color .15s ease}
+  .foot-bottom a:hover{color:var(--accent)}
+  .hr-faq summary:hover{color:var(--accent)}
+}
 </style>
 </head>
 <body>
@@ -654,7 +675,7 @@ html{scroll-padding-top:96px}
             <div class="track-scale"><span>30/10 · das 9h às 13h</span><span>mesma escala de 3 dias</span></div>
             <div class="chips"><span class="chip ok"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /> <path d="M9 12l2 2l4 -4" /></svg>0 pendências</span><span class="chip ok"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 14l11 -11" /> <path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5" /></svg>Folha enviada com 3 dias de antecedência</span></div>
           </div>
-          <div class="hv-ev"><div><b>−20 h</b><span>de DP por mês</span></div><div><b>−60%</b><span>de retificações</span></div><div><b>R$ 900</b><span>em benefícios indevidos evitados</span></div></div>
+          <div class="hv-ev rv"><div><b>−20 h</b><span>de DP por mês</span></div><div><b>−60%</b><span>de retificações</span></div><div><b>R$ 900</b><span>em benefícios indevidos evitados</span></div></div>
         </div>
         
       </div>
@@ -665,17 +686,17 @@ html{scroll-padding-top:96px}
   <section id="problema" style="padding-top:0">
     <div class="wrap problem-grid">
       <div style="display:flex;flex-direction:column;gap:var(--space-8);min-width:0">
-        <div class="sec-head">
+        <div class="sec-head rv">
           <p class="eyebrow">O dia 30 de quem fecha a folha</p>
           <h2 class="h-sec">O dia 30 não deveria ser uma caça a erros<span class="dot">.</span></h2>
         </div>
-        <ol class="symptoms">
+        <ol class="symptoms rv-kids">
           <li><span class="mono">01</span><div><b>Tudo aparece no último dia.</b>Batidas faltando, atestados soltos no e-mail e horas extras sem aprovação chegam juntos, na véspera do envio.</div></li>
           <li><span class="mono">02</span><div><b>Controles que não conversam.</b>Férias numa planilha, benefícios em outra, ponto no relógio. Nenhum bate com o outro sem conferência manual.</div></li>
           <li><span class="mono">03</span><div><b>O erro aparece depois do envio.</b>A contabilidade devolve, a folha é retificada e o funcionário descobre na conta.</div></li>
         </ol>
       </div>
-      <div class="poster" style="background:#1B2230;color:#F3EFE6">
+      <div class="poster rv" style="background:#1B2230;color:#F3EFE6">
         <canvas data-poster="thirty" aria-hidden="true"></canvas>
         <div class="poster-top"><span>Fechamento</span><span>Último dia útil</span></div>
         <div class="poster-cap"><b>Dia 30 é só conferir<span style="color:#E0715B">.</span></b></div>
@@ -697,22 +718,22 @@ html{scroll-padding-top:96px}
   <!-- 4 · Transformação -->
   <section id="resultados">
     <div class="wrap">
-      <div class="sec-head">
+      <div class="sec-head rv">
         <p class="eyebrow">O que muda no seu mês</p>
         <h2 class="h-sec">Menos horas, menos retrabalho, o mesmo time<span class="dot">.</span></h2>
       </div>
       <div class="metrics">
-        <div class="hr-metric"><span class="hr-metric-value">−20<span class="unit">h/mês</span></span><span class="hr-metric-note">no fechamento da folha</span></div>
-        <div class="hr-metric"><span class="hr-metric-value">−60%</span><span class="hr-metric-note">de retificações depois do envio à contabilidade</span></div>
-        <div class="hr-metric"><span class="hr-metric-value">2,5×</span><span class="hr-metric-note">mais funcionários atendidos por pessoa do DP</span></div>
-        <div class="hr-metric"><span class="hr-metric-value">R$ 900<span class="unit">/mês</span></span><span class="hr-metric-note">em benefícios indevidos evitados</span></div>
-        <div class="hr-metric"><span class="hr-metric-value">3<span class="unit">dias</span></span><span class="hr-metric-note">de antecedência no envio da folha</span></div>
+        <div class="hr-metric rv"><span class="hr-metric-value">−20<span class="unit">h/mês</span></span><span class="hr-metric-note">no fechamento da folha</span></div>
+        <div class="hr-metric rv"><span class="hr-metric-value">−60%</span><span class="hr-metric-note">de retificações depois do envio à contabilidade</span></div>
+        <div class="hr-metric rv"><span class="hr-metric-value">2,5×</span><span class="hr-metric-note">mais funcionários atendidos por pessoa do DP</span></div>
+        <div class="hr-metric rv"><span class="hr-metric-value">R$ 900<span class="unit">/mês</span></span><span class="hr-metric-note">em benefícios indevidos evitados</span></div>
+        <div class="hr-metric rv"><span class="hr-metric-value">3<span class="unit">dias</span></span><span class="hr-metric-note">de antecedência no envio da folha</span></div>
       </div>
       <p class="foot-note">Estimativas para uma empresa de 150 pessoas com um DP de 2 pessoas.</p>
       <div class="transforms" aria-label="O que o mercado promete e o que a Horalis entrega">
-        <div class="hr-transform"><span class="hr-transform-from">Automatize os processos do seu RH</span><span class="hr-transform-arrow" aria-hidden="true">→</span><span class="hr-transform-to">20 horas a menos por mês no fechamento da folha</span></div>
-        <div class="hr-transform"><span class="hr-transform-from">Simples e intuitiva</span><span class="hr-transform-arrow" aria-hidden="true">→</span><span class="hr-transform-to">60% menos retificações depois do envio</span></div>
-        <div class="hr-transform"><span class="hr-transform-from">Plataforma completa</span><span class="hr-transform-arrow" aria-hidden="true">→</span><span class="hr-transform-to">2,5 vezes mais funcionários por pessoa do DP</span></div>
+        <div class="hr-transform rv"><span class="hr-transform-from">Automatize os processos do seu RH</span><span class="hr-transform-arrow" aria-hidden="true">→</span><span class="hr-transform-to">20 horas a menos por mês no fechamento da folha</span></div>
+        <div class="hr-transform rv"><span class="hr-transform-from">Simples e intuitiva</span><span class="hr-transform-arrow" aria-hidden="true">→</span><span class="hr-transform-to">60% menos retificações depois do envio</span></div>
+        <div class="hr-transform rv"><span class="hr-transform-from">Plataforma completa</span><span class="hr-transform-arrow" aria-hidden="true">→</span><span class="hr-transform-to">2,5 vezes mais funcionários por pessoa do DP</span></div>
       </div>
     </div>
   </section>
@@ -720,12 +741,12 @@ html{scroll-padding-top:96px}
   <!-- Do tamanho certo -->
   <section id="tamanho-certo" style="padding-top:0">
     <div class="wrap">
-      <div class="sec-head">
+      <div class="sec-head rv">
         <p class="eyebrow">Do tamanho certo</p>
         <h2 class="h-sec">Nem planilha, nem ERP<span class="dot">.</span></h2>
         <p class="lead">A planilha não aguenta 50 pessoas. O ERP foi feito para mil, com módulos que um DP de 1 a 3 pessoas não usa. A Horalis foi feita para o meio do caminho.</p>
       </div>
-      <div class="cmp-wrap" tabindex="0" aria-label="Comparativo entre planilha, Horalis e ERP">
+      <div class="cmp-wrap rv" tabindex="0" aria-label="Comparativo entre planilha, Horalis e ERP">
         <table class="cmp">
           <thead><tr><th scope="col"><span class="hr-sr">Critério</span></th><th scope="col">Planilha<small>Até ~50 pessoas</small></th><th scope="col" class="hl">Horalis<small>50 a 300 pessoas</small></th><th scope="col">ERP de RH<small>500+ pessoas</small></th></tr></thead>
           <tbody>
@@ -742,25 +763,25 @@ html{scroll-padding-top:96px}
   <!-- 5 · Como funciona -->
   <section id="como-funciona" class="inverse">
     <div class="wrap">
-      <div class="sec-head">
+      <div class="sec-head rv">
         <p class="eyebrow">Como funciona</p>
         <h2 class="h-sec">Pendência resolvida no dia, mês fechado no dia 30<span class="dot">.</span></h2>
       </div>
       <div class="how-grid">
-        <ol class="steps">
+        <ol class="steps rv-kids">
           <li><span class="n">1</span><div><h3>Pendências aparecem quando acontecem</h3><p>Batida faltando, atestado ou hora extra sem aprovação viram uma pendência no mesmo dia, para o gestor ou para o DP, e não no dia 30.</p></div></li>
           <li><span class="n">2</span><div><h3>Um lançamento, todos os reflexos</h3><p>Férias e atestados ajustam ponto, banco de horas e benefícios de uma vez. Ninguém precisa repetir a informação em outra planilha.</p></div></li>
           <li><span class="n">3</span><div><h3>Fechamento conferido</h3><p>Com o checklist zerado, a folha sai para a contabilidade no formato do seu sistema, com antecedência.</p></div></li>
         </ol>
-        <div class="device" role="img" aria-label="Tela da Horalis: fechamento de outubro com tudo conferido, zero pendências, 47 eventos resolvidos e 150 funcionários">
+        <div class="device rv" role="img" aria-label="Tela da Horalis: fechamento de outubro com tudo conferido, zero pendências, 47 eventos resolvidos e 150 funcionários">
           <div class="app">
             <div class="app-bar"><svg viewBox="0 0 691 200" aria-hidden="true" focusable="false"><use href="#logo-horalis"/></svg><div class="tabs"><b>Fechamento</b><span>Ponto</span><span>Férias</span><span>Benefícios</span></div></div>
             <div class="app-body">
               <div class="app-title"><h3>Fechamento · Outubro</h3><span class="hr-badge hr-badge-success">Tudo conferido</span></div>
               <div class="app-stats">
-                <div class="app-stat"><span>Pendências</span><b>0</b></div>
-                <div class="app-stat"><span>Resolvidos</span><b>47</b></div>
-                <div class="app-stat"><span>Funcionários</span><b>150</b></div>
+                <div class="app-stat rv"><span>Pendências</span><b>0</b></div>
+                <div class="app-stat rv"><span>Resolvidos</span><b>47</b></div>
+                <div class="app-stat rv"><span>Funcionários</span><b>150</b></div>
               </div>
               <div class="app-list">
                 <div class="hr-event"><span class="hr-event-type">Atestado · 27/10</span><span class="hr-event-name">Marina Costa</span><span class="hr-event-desc">Ponto e banco de horas ajustados</span><span class="hr-badge hr-badge-success">Resolvido</span></div>
@@ -779,20 +800,20 @@ html{scroll-padding-top:96px}
   <!-- 6 · Calculadora -->
   <section id="calculadora">
     <div class="wrap">
-      <div class="sec-head">
+      <div class="sec-head rv">
         <p class="eyebrow">Custo do fechamento</p>
         <h2 class="h-sec">Quanto custa o seu fechamento hoje<span class="dot">?</span></h2>
         <p class="lead">Preencha com os números do seu DP. O cálculo considera metade das horas de fechamento devolvidas e os benefícios indevidos evitados.</p>
       </div>
       <div class="calc">
-        <form class="calc-form" id="calc" novalidate>
+        <form class="calc-form rv" id="calc" novalidate>
           <label class="hr-field"><span class="hr-field-label">Funcionários</span><span class="hr-field-box"><input class="hr-field-input" id="c-func" name="funcionarios" type="number" inputmode="numeric" min="1" value="150"><span class="hr-field-affix">pessoas</span></span></label>
           <label class="hr-field"><span class="hr-field-label">Pessoas no DP</span><span class="hr-field-box"><input class="hr-field-input" id="c-dp" name="pessoas_dp" type="number" inputmode="numeric" min="1" value="2"><span class="hr-field-affix">pessoas</span></span></label>
           <label class="hr-field"><span class="hr-field-label">Horas de fechamento por mês</span><span class="hr-field-box"><input class="hr-field-input" id="c-horas" name="horas_fechamento" type="number" inputmode="numeric" min="0" value="40"><span class="hr-field-affix">h</span></span><span class="hr-field-hint">Somando todas as pessoas do DP</span></label>
           <label class="hr-field"><span class="hr-field-label">Custo da hora</span><span class="hr-field-box"><span class="hr-field-affix">R$</span><input class="hr-field-input" id="c-custo" name="custo_hora" type="number" inputmode="decimal" min="0" value="45"></span><span class="hr-field-hint">Salário mais encargos</span></label>
           <label class="hr-field full"><span class="hr-field-label">Benefícios pagos indevidamente por mês</span><span class="hr-field-box"><span class="hr-field-affix">R$</span><input class="hr-field-input" id="c-ben" name="beneficios_indevidos" type="number" inputmode="decimal" min="0" value="900"></span><span class="hr-field-hint">VR, VT e outros pagos a quem estava de férias, afastado ou desligado</span></label>
         </form>
-        <div class="calc-out" aria-live="polite">
+        <div class="calc-out rv" aria-live="polite">
           <div style="display:flex;flex-direction:column;gap:8px">
             <span class="eyebrow">Economia estimada por ano</span>
             <span class="calc-big" id="o-ano">R$ 21.600</span>
@@ -812,13 +833,13 @@ html{scroll-padding-top:96px}
   <!-- Planos -->
   <section id="precos" style="padding-top:0">
     <div class="wrap">
-      <div class="sec-head">
+      <div class="sec-head rv">
         <p class="eyebrow">Planos</p>
         <h2 class="h-sec">Um plano para o tamanho do seu DP<span class="dot">.</span></h2>
         <p class="lead">Você paga pela faixa de funcionários, nunca por módulo. O que muda de um plano para o outro é o que a operação pede quando cresce: aprovações, integrações e filiais.</p>
       </div>
       <div class="plans">
-        <article class="plan" data-plan="1">
+        <article class="plan rv" data-plan="1">
           <div class="plan-range"><span>50 a 100 funcionários</span></div>
           <div class="plan-name">Essencial</div>
           <div class="plan-price">R$ 890<small> /mês</small></div>
@@ -830,7 +851,7 @@ html{scroll-padding-top:96px}
           </ul>
           <a class="hr-btn hr-btn-secondary hr-btn-md" href="#diagnostico" data-open data-faixa="50 a 100">Solicitar proposta</a>
         </article>
-        <article class="plan feat" data-plan="2">
+        <article class="plan feat rv" data-plan="2">
           <span class="flag">Mais escolhido</span>
           <div class="plan-range"><span>101 a 200 funcionários</span></div>
           <div class="plan-name">Gestão</div>
@@ -843,7 +864,7 @@ html{scroll-padding-top:96px}
           </ul>
           <a class="hr-btn hr-btn-primary hr-btn-md" href="#diagnostico" data-open data-faixa="101 a 200">Solicitar proposta</a>
         </article>
-        <article class="plan" data-plan="3">
+        <article class="plan rv" data-plan="3">
           <div class="plan-range"><span>201 a 300 funcionários</span></div>
           <div class="plan-name">Escala</div>
           <div class="plan-price">R$ 2.290<small> /mês</small></div>
@@ -857,8 +878,8 @@ html{scroll-padding-top:96px}
         </article>
       </div>
       <div class="incl-grid">
-        <div class="incl-item"><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5" /> <path d="M12 12l8 -4.5" /> <path d="M12 12l0 9" /> <path d="M12 12l-8 -4.5" /> <path d="M16 5.25l-8 4.5" /></svg></span><div><b>Sem módulos, em todos os planos</b><p>Ponto, férias e benefícios no mesmo preço. Nada de cobrança por funcionalidade.</p></div></div>
-        <div class="incl-item"><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /> <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /> <path d="M15 15l3.35 3.35" /> <path d="M9 15l-3.35 3.35" /> <path d="M5.65 5.65l3.35 3.35" /> <path d="M18.35 5.65l-3.35 3.35" /></svg></span><div><b>Plantão nos dias de fechamento</b><p>Do dia 28 ao dia 5, gente que entende de folha responde em minutos.</p></div></div>
+        <div class="incl-item rv"><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5" /> <path d="M12 12l8 -4.5" /> <path d="M12 12l0 9" /> <path d="M12 12l-8 -4.5" /> <path d="M16 5.25l-8 4.5" /></svg></span><div><b>Sem módulos, em todos os planos</b><p>Ponto, férias e benefícios no mesmo preço. Nada de cobrança por funcionalidade.</p></div></div>
+        <div class="incl-item rv"><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /> <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /> <path d="M15 15l3.35 3.35" /> <path d="M9 15l-3.35 3.35" /> <path d="M5.65 5.65l3.35 3.35" /> <path d="M18.35 5.65l-3.35 3.35" /></svg></span><div><b>Plantão nos dias de fechamento</b><p>Do dia 28 ao dia 5, gente que entende de folha responde em minutos.</p></div></div>
       </div>
     </div>
   </section>
@@ -866,11 +887,11 @@ html{scroll-padding-top:96px}
   <!-- 8 · Perguntas -->
   <section id="perguntas" style="padding-top:0">
     <div class="wrap faq-grid">
-      <div class="sec-head">
+      <div class="sec-head rv">
         <p class="eyebrow">Perguntas</p>
         <h2 class="h-sec">Antes de trocar de sistema<span class="dot">.</span></h2>
       </div>
-      <div id="faq"><details class="hr-faq"><summary>É só um sistema de ponto?<span class="hr-faq-icon" aria-hidden="true"></span></summary><p class="hr-faq-body">Não. O ponto é o registro. A Horalis conecta ponto, férias e benefícios e cuida do que vem depois: resolve cada evento quando ele acontece para que o fechamento da folha vire conferência.</p></details><details class="hr-faq"><summary>Já tenho um sistema de ponto. Por que trocar?<span class="hr-faq-icon" aria-hidden="true"></span></summary><p class="hr-faq-body">Porque o problema não está em registrar a batida, e sim em fechar o mês sem retrabalho. Se o seu dia 30 ainda tem caça a erros, o sistema atual resolve só a primeira parte.</p></details><details class="hr-faq"><summary>Os sistemas grandes não fazem mais pelo mesmo preço?<span class="hr-faq-icon" aria-hidden="true"></span></summary><p class="hr-faq-body">Fazem mais do que um DP de 1 a 3 pessoas usa, e cobram por módulo. A Horalis cobra por faixa de funcionários, com tudo incluso, para empresas de 50 a 300 pessoas.</p></details><details class="hr-faq"><summary>Trocar de sistema no meio do ano dá trabalho?<span class="hr-faq-icon" aria-hidden="true"></span></summary><p class="hr-faq-body">A implantação é feita para DP enxuto, em cerca de 3 semanas, e começa a valer no próximo fechamento. A gente importa funcionários, jornadas e benefícios com você.</p></details><details class="hr-faq"><summary>E se der problema justo no dia do fechamento?<span class="hr-faq-icon" aria-hidden="true"></span></summary><p class="hr-faq-body">Existe um plantão de suporte do dia 28 ao dia 5, com gente que entende de folha respondendo rápido.</p></details><details class="hr-faq"><summary>A folha sai no formato da minha contabilidade?<span class="hr-faq-icon" aria-hidden="true"></span></summary><p class="hr-faq-body">Sim. O fechamento conferido gera o arquivo no formato do sistema de folha que a sua contabilidade usa.</p></details></div>
+      <div id="faq"><details class="hr-faq rv"><summary>É só um sistema de ponto?<span class="hr-faq-icon" aria-hidden="true"></span></summary><p class="hr-faq-body">Não. O ponto é o registro. A Horalis conecta ponto, férias e benefícios e cuida do que vem depois: resolve cada evento quando ele acontece para que o fechamento da folha vire conferência.</p></details><details class="hr-faq rv"><summary>Já tenho um sistema de ponto. Por que trocar?<span class="hr-faq-icon" aria-hidden="true"></span></summary><p class="hr-faq-body">Porque o problema não está em registrar a batida, e sim em fechar o mês sem retrabalho. Se o seu dia 30 ainda tem caça a erros, o sistema atual resolve só a primeira parte.</p></details><details class="hr-faq rv"><summary>Os sistemas grandes não fazem mais pelo mesmo preço?<span class="hr-faq-icon" aria-hidden="true"></span></summary><p class="hr-faq-body">Fazem mais do que um DP de 1 a 3 pessoas usa, e cobram por módulo. A Horalis cobra por faixa de funcionários, com tudo incluso, para empresas de 50 a 300 pessoas.</p></details><details class="hr-faq rv"><summary>Trocar de sistema no meio do ano dá trabalho?<span class="hr-faq-icon" aria-hidden="true"></span></summary><p class="hr-faq-body">A implantação é feita para DP enxuto, em cerca de 3 semanas, e começa a valer no próximo fechamento. A gente importa funcionários, jornadas e benefícios com você.</p></details><details class="hr-faq rv"><summary>E se der problema justo no dia do fechamento?<span class="hr-faq-icon" aria-hidden="true"></span></summary><p class="hr-faq-body">Existe um plantão de suporte do dia 28 ao dia 5, com gente que entende de folha respondendo rápido.</p></details><details class="hr-faq rv"><summary>A folha sai no formato da minha contabilidade?<span class="hr-faq-icon" aria-hidden="true"></span></summary><p class="hr-faq-body">Sim. O fechamento conferido gera o arquivo no formato do sistema de folha que a sua contabilidade usa.</p></details></div>
     </div>
   </section>
 
@@ -883,7 +904,7 @@ html{scroll-padding-top:96px}
         <p class="lead">Em 20 minutos, a gente olha o seu fechamento atual e mostra onde estão as horas e o dinheiro que ficam pelo caminho.</p>
         <div class="ctas"><a class="hr-btn hr-btn-primary hr-btn-lg" href="#diagnostico" data-open>Pedir diagnóstico do fechamento</a><a class="hr-btn hr-btn-secondary hr-btn-lg" href="#como-funciona">Veja um fechamento na prática</a></div>
       </div>
-      <div class="hv-b receipt" role="img" aria-label="A conta do fechamento de outubro: hoje custa R$ 2.700 por mês; com a Horalis, R$ 900. Economia de R$ 1.800 por mês">
+      <div class="hv-b receipt rv" role="img" aria-label="A conta do fechamento de outubro: hoje custa R$ 2.700 por mês; com a Horalis, R$ 900. Economia de R$ 1.800 por mês">
           <div class="rc-head"><div><b>A conta do fechamento</b><span style="display:block;margin-top:4px">Outubro · 150 pessoas</span></div></div>
           <table class="rc">
             <thead><tr><th></th><th>Hoje</th><th>Horalis</th></tr></thead>
@@ -904,7 +925,7 @@ html{scroll-padding-top:96px}
 
 <footer class="site-foot">
   <div class="wrap">
-    <div class="foot-grid">
+    <div class="foot-grid rv">
       <div class="foot-brand">
         <a class="logo" href="#topo" aria-label="Horalis, voltar ao topo da página"><svg viewBox="0 0 691 200" aria-hidden="true" focusable="false"><use href="#logo-horalis"/></svg></a>
         <p>Gestão de ponto, férias e benefícios conectados, para fechar a folha do mês sem retrabalho. Feito para o DP de empresas de 50 a 300 pessoas.</p>
@@ -914,7 +935,7 @@ html{scroll-padding-top:96px}
         <a class="hr-btn hr-btn-primary hr-btn-md" href="#diagnostico" data-open>Pedir diagnóstico</a>
       </div>
     </div>
-    <div class="foot-bottom"><span>© 2026 Horalis</span><span>Construído por Akaishi Design Studio · <a href="https://akaishidesign.com.br" target="_blank" rel="noopener">akaishidesign.com.br</a></span></div>
+    <div class="foot-bottom"><span>© 2026 Horalis</span><span>Construído por <a href="https://akaishidesign.com.br" target="_blank" rel="noopener">Akaishi Design Studio</a></span></div>
   </div>
 </footer>
 
